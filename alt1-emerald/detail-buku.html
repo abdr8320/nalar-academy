@@ -24,10 +24,12 @@
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
       <div class="flex items-center gap-2">
         <span class="font-medium text-white">Pratinjau Desain:</span>
-        <span class="text-gray-300 font-medium">Alternatif 1 &mdash; Emerald Style &bull; Halaman Detail Buku</span>
+        <span class="bg-emerald-950 text-emerald-300 px-2 py-0.5 rounded font-mono font-medium border border-emerald-800">Alternatif 1 &mdash; Emerald Publishing Style &bull; Detail Buku</span>
       </div>
       <div class="flex items-center space-x-2 text-xs">
-        <a href="detail-buku.html" class="px-2.5 py-1 rounded bg-white text-gray-900 font-semibold">Alt 1 (Emerald)</a>
+        <a href="index.html" class="px-2.5 py-1 rounded text-gray-300 hover:text-white hover:bg-gray-800 transition">Alt 1 Beranda</a>
+        <a href="bookstore.html" class="px-2.5 py-1 rounded text-gray-300 hover:text-white hover:bg-gray-800 transition">Alt 1 Bookstore</a>
+        <a href="detail-buku.html" class="px-2.5 py-1 rounded bg-white text-emerald-900 font-bold">Alt 1 Detail</a>
         <a href="../alt2-modern/detail-buku.html" class="px-2.5 py-1 rounded text-gray-300 hover:text-white hover:bg-gray-800 transition">Alt 2 (Modern Grid)</a>
         <a href="../alt3-press/detail-buku.html" class="px-2.5 py-1 rounded text-gray-300 hover:text-white hover:bg-gray-800 transition">Alt 3 (University Press)</a>
         <span class="text-gray-600">|</span>
@@ -40,27 +42,27 @@
   <header class="border-b border-gray-200 bg-white sticky top-[33px] z-40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center gap-3">
-          <div class="w-10 h-10 border-2 border-gray-900 flex items-center justify-center font-serif font-bold text-lg text-gray-900 tracking-tight">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 bg-emerald-800 text-white flex items-center justify-center font-serif font-bold text-lg rounded-sm tracking-tight shadow-sm">
             NA
           </div>
           <div>
-            <span class="font-serif text-xl font-bold tracking-tight text-gray-900 block leading-tight">NALAR ACADEMY</span>
-            <span class="text-[11px] font-medium tracking-wider text-gray-500 uppercase block">Publishing & Bookstore</span>
+            <span class="font-serif text-xl font-bold tracking-tight text-gray-900 group-hover:text-emerald-800 transition block leading-tight">NALAR ACADEMY</span>
+            <span class="text-[11px] font-medium tracking-wider text-emerald-800 uppercase block">Publishing & Bookstore</span>
           </div>
         </a>
 
         <nav class="hidden md:flex items-center space-x-8 text-sm">
-          <a href="index.html" class="text-gray-600 hover:text-gray-900 py-6">Beranda</a>
+          <a href="index.html" class="text-gray-600 hover:text-emerald-800 py-6">Beranda</a>
           <!-- Menu Jurnal: di production langsung redirect ke OJS, pada prototipe tidak ada action -->
-          <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900 py-6 cursor-pointer">Jurnal (OJS)</a>
-          <a href="bookstore.html" class="text-gray-900 font-semibold border-b-2 border-gray-900 py-6">Bookstore</a>
-          <a href="index.html#profil" class="text-gray-600 hover:text-gray-900 py-6">Tentang Kami</a>
-          <a href="index.html#kontak" class="text-gray-600 hover:text-gray-900 py-6">Kontak</a>
+          <a href="javascript:void(0)" class="text-gray-600 hover:text-emerald-800 py-6 cursor-pointer">Jurnal (OJS)</a>
+          <a href="bookstore.html" class="text-emerald-800 font-bold border-b-2 border-emerald-800 py-6">Bookstore</a>
+          <a href="index.html#profil" class="text-gray-600 hover:text-emerald-800 py-6">Tentang Kami</a>
+          <a href="index.html#kontak" class="text-gray-600 hover:text-emerald-800 py-6">Kontak</a>
         </nav>
 
         <div class="hidden lg:flex items-center space-x-3">
-          <a href="bookstore.html" class="px-4 py-2 text-xs font-semibold rounded border border-gray-300 text-gray-700 hover:bg-gray-50 transition">
+          <a href="bookstore.html" class="px-4 py-2 text-xs font-semibold rounded border border-gray-300 text-gray-700 hover:border-emerald-800 hover:text-emerald-800 transition">
             &larr; Kembali ke Katalog
           </a>
         </div>
@@ -71,9 +73,9 @@
   <!-- Clean Breadcrumb -->
   <div class="border-b border-gray-200 bg-gray-50 text-xs text-gray-600 py-3">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2">
-      <a href="index.html" class="hover:text-gray-900">Beranda</a>
+      <a href="index.html" class="hover:text-emerald-800">Beranda</a>
       <span>/</span>
-      <a href="bookstore.html" class="hover:text-gray-900">Bookstore</a>
+      <a href="bookstore.html" class="hover:text-emerald-800">Bookstore</a>
       <span>/</span>
       <span class="text-gray-900 font-medium truncate max-w-md">Metodologi Penelitian Kualitatif dalam Sosial & Humaniora</span>
     </div>
@@ -181,10 +183,10 @@
 
             <div class="flex flex-col sm:flex-row gap-2.5 w-full sm:w-auto">
               <a href="https://wa.me/6281234567890?text=Halo%20Nalar%20Academy,%20saya%20ingin%20memesan%20buku%20Metodologi%20Penelitian%20Kualitatif%20(ISBN:%20978-623-8123-01-2)%20seharga%20Rp%2095.000" target="_blank"
-                 class="px-5 py-3 bg-gray-900 hover:bg-gray-800 text-white rounded text-xs font-semibold text-center transition">
+                 class="px-5 py-3 bg-emerald-800 hover:bg-emerald-900 text-white rounded text-xs font-semibold text-center transition shadow-sm">
                 Pesan via WhatsApp &rarr;
               </a>
-              <button onclick="copyCitation()" class="px-4 py-3 bg-white border border-gray-300 hover:bg-gray-100 text-gray-700 rounded text-xs font-medium transition">
+              <button onclick="copyCitation()" class="px-4 py-3 bg-white border border-gray-300 hover:border-emerald-800 hover:text-emerald-800 text-gray-700 rounded text-xs font-medium transition">
                 Salin Sitasi (APA)
               </button>
             </div>
@@ -193,16 +195,16 @@
           <!-- Tabbed Content Section -->
           <div>
             <div class="flex border-b border-gray-200 text-xs sm:text-sm font-semibold text-gray-600">
-              <button onclick="setTab('sinopsis', this)" class="tab-link active py-3 px-4 border-b-2 border-gray-900 text-gray-900 -mb-[1px]">
+              <button onclick="setTab('sinopsis', this)" class="tab-link active py-3 px-4 border-b-2 border-emerald-800 text-emerald-800 font-bold -mb-[1px]">
                 Sinopsis Lengkap
               </button>
-              <button onclick="setTab('toc', this)" class="tab-link py-3 px-4 border-b-2 border-transparent hover:text-gray-900 -mb-[1px]">
+              <button onclick="setTab('toc', this)" class="tab-link py-3 px-4 border-b-2 border-transparent hover:text-emerald-800 -mb-[1px]">
                 Daftar Isi Bab
               </button>
-              <button onclick="setTab('author', this)" class="tab-link py-3 px-4 border-b-2 border-transparent hover:text-gray-900 -mb-[1px]">
+              <button onclick="setTab('author', this)" class="tab-link py-3 px-4 border-b-2 border-transparent hover:text-emerald-800 -mb-[1px]">
                 Profil Penulis
               </button>
-              <button onclick="setTab('kdt', this)" class="tab-link py-3 px-4 border-b-2 border-transparent hover:text-gray-900 -mb-[1px]">
+              <button onclick="setTab('kdt', this)" class="tab-link py-3 px-4 border-b-2 border-transparent hover:text-emerald-800 -mb-[1px]">
                 Data Bibliografi (KDT)
               </button>
             </div>
@@ -297,11 +299,11 @@
       document.getElementById(tabId).classList.remove('hidden');
 
       document.querySelectorAll('.tab-link').forEach(btn => {
-        btn.classList.remove('border-gray-900', 'text-gray-900', 'active');
-        btn.classList.add('border-transparent');
+        btn.classList.remove('border-emerald-800', 'text-emerald-800', 'active', 'font-bold');
+        btn.classList.add('border-transparent', 'text-gray-600');
       });
-      el.classList.add('border-gray-900', 'text-gray-900', 'active');
-      el.classList.remove('border-transparent');
+      el.classList.add('border-emerald-800', 'text-emerald-800', 'active', 'font-bold');
+      el.classList.remove('border-transparent', 'text-gray-600');
     }
 
     function copyCitation() {

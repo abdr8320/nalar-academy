@@ -23,11 +23,12 @@
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
       <div class="flex items-center gap-2">
         <span class="font-medium text-white">Pratinjau Desain:</span>
-        <span class="text-zinc-300 font-medium">Alternatif 2 &mdash; Modern Grid &bull; Halaman Bookstore</span>
+        <span class="bg-blue-950 text-blue-300 px-2 py-0.5 rounded font-mono font-medium border border-blue-800">Alternatif 2 &mdash; Modern Grid Style &bull; Bookstore</span>
       </div>
       <div class="flex items-center space-x-2 text-xs">
+        <a href="index.html" class="px-2.5 py-1 rounded text-zinc-300 hover:text-white hover:bg-zinc-800 transition">Alt 2 Beranda</a>
+        <a href="bookstore.html" class="px-2.5 py-1 rounded bg-white text-blue-900 font-bold">Alt 2 Bookstore</a>
         <a href="../alt1-emerald/bookstore.html" class="px-2.5 py-1 rounded text-zinc-300 hover:text-white hover:bg-zinc-800 transition">Alt 1 (Emerald)</a>
-        <a href="index.html" class="px-2.5 py-1 rounded bg-white text-zinc-900 font-bold">Alt 2 (Modern Grid)</a>
         <a href="../alt3-press/bookstore.html" class="px-2.5 py-1 rounded text-zinc-300 hover:text-white hover:bg-zinc-800 transition">Alt 3 (University Press)</a>
         <span class="text-zinc-600">|</span>
         <a href="../index.html" class="px-2.5 py-1 rounded bg-zinc-800 text-amber-300 hover:bg-zinc-700 font-medium">Hub Showcase</a>
@@ -39,28 +40,28 @@
   <header class="border-b border-zinc-200 bg-white sticky top-[33px] z-40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center gap-3">
-          <div class="w-10 h-10 bg-zinc-900 text-white flex items-center justify-center font-bold text-base tracking-tight rounded-sm">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 bg-blue-600 text-white flex items-center justify-center font-bold text-base tracking-tight rounded-sm shadow-sm">
             NA
           </div>
           <div>
-            <span class="text-lg font-bold tracking-tight text-zinc-900 block leading-tight">NALAR ACADEMY</span>
-            <span class="text-[10px] font-semibold tracking-wider text-zinc-500 uppercase block">Publishing & Bookstore</span>
+            <span class="text-lg font-bold tracking-tight text-zinc-900 group-hover:text-blue-600 transition block leading-tight">NALAR ACADEMY</span>
+            <span class="text-[10px] font-semibold tracking-wider text-blue-600 uppercase block">Publishing & Bookstore</span>
           </div>
         </a>
 
         <nav class="hidden md:flex items-center space-x-1 font-semibold text-sm text-zinc-600">
-          <a href="index.html" class="px-4 py-2 rounded hover:text-zinc-900 transition">Beranda</a>
+          <a href="index.html" class="px-4 py-2 rounded hover:text-blue-600 transition">Beranda</a>
           <!-- Menu Jurnal: di production langsung redirect ke OJS, pada prototipe tidak ada action -->
-          <a href="javascript:void(0)" class="px-4 py-2 rounded hover:text-zinc-900 transition cursor-pointer">Jurnal (OJS)</a>
-          <a href="bookstore.html" class="px-4 py-2 rounded bg-zinc-100 text-zinc-900 font-bold">Bookstore</a>
-          <a href="index.html#profil" class="px-4 py-2 rounded hover:text-zinc-900 transition">Tentang Kami</a>
-          <a href="index.html#kontak" class="px-4 py-2 rounded hover:text-zinc-900 transition">Kontak</a>
+          <a href="javascript:void(0)" class="px-4 py-2 rounded hover:text-blue-600 transition cursor-pointer">Jurnal (OJS)</a>
+          <a href="bookstore.html" class="px-4 py-2 rounded bg-blue-50 text-blue-700 font-bold border border-blue-200">Bookstore</a>
+          <a href="index.html#profil" class="px-4 py-2 rounded hover:text-blue-600 transition">Tentang Kami</a>
+          <a href="index.html#kontak" class="px-4 py-2 rounded hover:text-blue-600 transition">Kontak</a>
         </nav>
 
         <div class="hidden lg:flex items-center space-x-3">
           <a href="https://wa.me/6281234567890?text=Halo%20Nalar%20Bookstore" target="_blank"
-             class="px-4 py-2 text-xs font-semibold rounded border border-zinc-300 text-zinc-800 hover:bg-zinc-50 transition">
+             class="px-4 py-2 text-xs font-semibold rounded border border-zinc-300 text-zinc-800 hover:border-blue-600 hover:text-blue-600 transition">
             Layanan WhatsApp CS
           </a>
         </div>
@@ -72,7 +73,7 @@
   <section class="py-10 bg-zinc-50 border-b border-zinc-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl">
-        <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider block mb-1">Katalog Resmi Perpustakaan</span>
+        <span class="text-xs font-bold text-blue-600 uppercase tracking-wider block mb-1">Katalog Resmi Perpustakaan</span>
         <h1 class="text-2xl sm:text-3xl font-extrabold text-zinc-950 tracking-tight">
           Katalog Buku & Publikasi Akademik
         </h1>
@@ -85,22 +86,22 @@
       <div class="mt-6 flex flex-col md:flex-row gap-4 items-center justify-between">
         <div class="w-full md:w-80 relative">
           <input type="text" id="modernSearchInput" placeholder="Cari judul buku, penulis, atau ISBN..." 
-                 class="w-full px-3.5 py-2 text-xs bg-white border border-zinc-300 rounded focus:outline-none focus:border-zinc-900 font-medium">
+                 class="w-full px-3.5 py-2 text-xs bg-white border border-zinc-300 rounded focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 font-medium">
         </div>
         <div class="flex flex-wrap items-center gap-1.5 w-full md:w-auto" id="modernCatButtons">
-          <button class="m-cat-btn active px-3 py-1.5 rounded text-xs font-bold bg-zinc-950 text-white" data-cat="all">
+          <button class="m-cat-btn active px-3 py-1.5 rounded text-xs font-bold bg-blue-600 text-white shadow-sm" data-cat="all">
             Semua
           </button>
-          <button class="m-cat-btn px-3 py-1.5 rounded text-xs font-medium border border-zinc-300 text-zinc-700 hover:bg-zinc-100" data-cat="metodologi">
+          <button class="m-cat-btn px-3 py-1.5 rounded text-xs font-medium border border-zinc-300 text-zinc-700 hover:border-blue-600 hover:text-blue-600" data-cat="metodologi">
             Metodologi
           </button>
-          <button class="m-cat-btn px-3 py-1.5 rounded text-xs font-medium border border-zinc-300 text-zinc-700 hover:bg-zinc-100" data-cat="pendidikan">
+          <button class="m-cat-btn px-3 py-1.5 rounded text-xs font-medium border border-zinc-300 text-zinc-700 hover:border-blue-600 hover:text-blue-600" data-cat="pendidikan">
             Pendidikan
           </button>
-          <button class="m-cat-btn px-3 py-1.5 rounded text-xs font-medium border border-zinc-300 text-zinc-700 hover:bg-zinc-100" data-cat="soshum">
+          <button class="m-cat-btn px-3 py-1.5 rounded text-xs font-medium border border-zinc-300 text-zinc-700 hover:border-blue-600 hover:text-blue-600" data-cat="soshum">
             Sosial Humaniora
           </button>
-          <button class="m-cat-btn px-3 py-1.5 rounded text-xs font-medium border border-zinc-300 text-zinc-700 hover:bg-zinc-100" data-cat="sains">
+          <button class="m-cat-btn px-3 py-1.5 rounded text-xs font-medium border border-zinc-300 text-zinc-700 hover:border-blue-600 hover:text-blue-600" data-cat="sains">
             Sains & Teknologi
           </button>
         </div>
@@ -115,7 +116,7 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6" id="modernBookGrid">
         
         <!-- Book 1 (Navy Academic) -->
-        <div class="mb-card border border-zinc-200 rounded p-4 bg-white flex flex-col justify-between hover:border-zinc-400 transition"
+        <div class="mb-card border border-zinc-200 rounded p-4 bg-white flex flex-col justify-between hover:border-blue-400 transition"
              data-cat="metodologi" data-q="metodologi penelitian kualitatif abdurrahman 9786238123012">
           <div>
             <a href="detail-buku.html?id=1" class="block aspect-[1/1.45] bg-[#1e3a5f] rounded-xs p-4 text-white relative book-spine overflow-hidden hover:opacity-95 transition">
@@ -128,21 +129,21 @@
             <div class="mt-3">
               <span class="text-[10px] text-zinc-400 font-mono block">978-623-8123-01-2</span>
               <h3 class="text-xs sm:text-sm font-bold text-zinc-950 mt-0.5 line-clamp-2">
-                <a href="detail-buku.html?id=1" class="hover:underline">Metodologi Penelitian Kualitatif dalam Sosial & Humaniora</a>
+                <a href="detail-buku.html?id=1" class="hover:text-blue-600 hover:underline">Metodologi Penelitian Kualitatif dalam Sosial & Humaniora</a>
               </h3>
               <p class="text-xs text-zinc-500 mt-0.5">Dr. H. Abdurrahman, M.Pd.</p>
               <div class="mt-2 text-sm font-bold text-zinc-950 font-mono">Rp 95.000</div>
             </div>
           </div>
           <div class="mt-3 pt-3 border-t border-zinc-100">
-            <a href="detail-buku.html?id=1" class="block w-full text-center py-2 text-xs font-bold rounded bg-zinc-900 hover:bg-zinc-800 text-white transition">
+            <a href="detail-buku.html?id=1" class="block w-full text-center py-2 text-xs font-bold rounded bg-blue-600 hover:bg-blue-700 text-white transition shadow-sm">
               Detail Buku &rarr;
             </a>
           </div>
         </div>
 
         <!-- Book 2 (Burgundy Academic) -->
-        <div class="mb-card border border-zinc-200 rounded p-4 bg-white flex flex-col justify-between hover:border-zinc-400 transition"
+        <div class="mb-card border border-zinc-200 rounded p-4 bg-white flex flex-col justify-between hover:border-blue-400 transition"
              data-cat="metodologi" data-q="filsafat ilmu dan etika akademik syukri 9786238123029">
           <div>
             <a href="detail-buku.html?id=2" class="block aspect-[1/1.45] bg-[#722f37] rounded-xs p-4 text-white relative book-spine overflow-hidden hover:opacity-95 transition">
@@ -155,21 +156,21 @@
             <div class="mt-3">
               <span class="text-[10px] text-zinc-400 font-mono block">978-623-8123-02-9</span>
               <h3 class="text-xs sm:text-sm font-bold text-zinc-950 mt-0.5 line-clamp-2">
-                <a href="detail-buku.html?id=2" class="hover:underline">Filsafat Ilmu dan Etika Akademik: Menata Integritas Karya</a>
+                <a href="detail-buku.html?id=2" class="hover:text-blue-600 hover:underline">Filsafat Ilmu dan Etika Akademik: Menata Integritas Karya</a>
               </h3>
               <p class="text-xs text-zinc-500 mt-0.5">Prof. Dr. M. Syukri, M.Phil.</p>
               <div class="mt-2 text-sm font-bold text-zinc-950 font-mono">Rp 85.000</div>
             </div>
           </div>
           <div class="mt-3 pt-3 border-t border-zinc-100">
-            <a href="detail-buku.html?id=2" class="block w-full text-center py-2 text-xs font-bold rounded bg-zinc-900 hover:bg-zinc-800 text-white transition">
+            <a href="detail-buku.html?id=2" class="block w-full text-center py-2 text-xs font-bold rounded bg-blue-600 hover:bg-blue-700 text-white transition shadow-sm">
               Detail Buku &rarr;
             </a>
           </div>
         </div>
 
         <!-- Book 3 (Forest Green) -->
-        <div class="mb-card border border-zinc-200 rounded p-4 bg-white flex flex-col justify-between hover:border-zinc-400 transition"
+        <div class="mb-card border border-zinc-200 rounded p-4 bg-white flex flex-col justify-between hover:border-blue-400 transition"
              data-cat="pendidikan" data-q="desain instruksional modern berbasis obe rina fitriani 9786238123036">
           <div>
             <a href="detail-buku.html?id=3" class="block aspect-[1/1.45] bg-[#1b4332] rounded-xs p-4 text-white relative book-spine overflow-hidden hover:opacity-95 transition">
@@ -182,21 +183,21 @@
             <div class="mt-3">
               <span class="text-[10px] text-zinc-400 font-mono block">978-623-8123-03-6</span>
               <h3 class="text-xs sm:text-sm font-bold text-zinc-950 mt-0.5 line-clamp-2">
-                <a href="detail-buku.html?id=3" class="hover:underline">Desain Instruksional Modern Berbasis OBE Perguruan Tinggi</a>
+                <a href="detail-buku.html?id=3" class="hover:text-blue-600 hover:underline">Desain Instruksional Modern Berbasis OBE Perguruan Tinggi</a>
               </h3>
               <p class="text-xs text-zinc-500 mt-0.5">Dr. Rina Fitriani, M.Ed.</p>
               <div class="mt-2 text-sm font-bold text-zinc-950 font-mono">Rp 110.000</div>
             </div>
           </div>
           <div class="mt-3 pt-3 border-t border-zinc-100">
-            <a href="detail-buku.html?id=3" class="block w-full text-center py-2 text-xs font-bold rounded bg-zinc-900 hover:bg-zinc-800 text-white transition">
+            <a href="detail-buku.html?id=3" class="block w-full text-center py-2 text-xs font-bold rounded bg-blue-600 hover:bg-blue-700 text-white transition shadow-sm">
               Detail Buku &rarr;
             </a>
           </div>
         </div>
 
         <!-- Book 4 (Dark Slate) -->
-        <div class="mb-card border border-zinc-200 rounded p-4 bg-white flex flex-col justify-between hover:border-zinc-400 transition"
+        <div class="mb-card border border-zinc-200 rounded p-4 bg-white flex flex-col justify-between hover:border-blue-400 transition"
              data-cat="sains" data-q="kecerdasan buatan transformasi digital hendra wijaya 9786238123043">
           <div>
             <a href="detail-buku.html?id=4" class="block aspect-[1/1.45] bg-[#2b2d42] rounded-xs p-4 text-white relative book-spine overflow-hidden hover:opacity-95 transition">
@@ -209,14 +210,14 @@
             <div class="mt-3">
               <span class="text-[10px] text-zinc-400 font-mono block">978-623-8123-04-3</span>
               <h3 class="text-xs sm:text-sm font-bold text-zinc-950 mt-0.5 line-clamp-2">
-                <a href="detail-buku.html?id=4" class="hover:underline">Kecerdasan Buatan & Transformasi Pembelajaran Digital</a>
+                <a href="detail-buku.html?id=4" class="hover:text-blue-600 hover:underline">Kecerdasan Buatan & Transformasi Pembelajaran Digital</a>
               </h3>
               <p class="text-xs text-zinc-500 mt-0.5">Hendra Wijaya & Dr. Gunawan</p>
               <div class="mt-2 text-sm font-bold text-zinc-950 font-mono">Rp 125.000</div>
             </div>
           </div>
           <div class="mt-3 pt-3 border-t border-zinc-100">
-            <a href="detail-buku.html?id=4" class="block w-full text-center py-2 text-xs font-bold rounded bg-zinc-900 hover:bg-zinc-800 text-white transition">
+            <a href="detail-buku.html?id=4" class="block w-full text-center py-2 text-xs font-bold rounded bg-blue-600 hover:bg-blue-700 text-white transition shadow-sm">
               Detail Buku &rarr;
             </a>
           </div>
@@ -240,10 +241,10 @@
     buttons.forEach(btn => {
       btn.addEventListener('click', () => {
         buttons.forEach(b => {
-          b.classList.remove('bg-zinc-950', 'text-white', 'active');
+          b.classList.remove('bg-blue-600', 'text-white', 'active', 'shadow-sm');
           b.classList.add('border', 'border-zinc-300', 'text-zinc-700');
         });
-        btn.classList.add('bg-zinc-950', 'text-white', 'active');
+        btn.classList.add('bg-blue-600', 'text-white', 'active', 'shadow-sm');
         btn.classList.remove('border', 'border-zinc-300', 'text-zinc-700');
 
         filter(btn.getAttribute('data-cat'), searchInput.value.toLowerCase());
