@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nalar Academy - Showcase 3 Alternatif Desain Publishing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif1: ['Merriweather', 'serif'],
+            serif2: ['"Libre Baskerville"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-800 antialiased selection:bg-slate-200">
+
+  <!-- Header Banner -->
+  <header class="bg-slate-900 text-white py-12 px-4 sm:px-6 lg:px-8 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-mono mb-4 border border-slate-700">
+        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+        <span>PROTOTYPE SHOWCASE &bull; NALAR ACADEMY PUBLISHING</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+        3 Alternatif Desain Website Nalar Academy
+      </h1>
+      <p class="mt-4 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed font-light">
+        Dibuat berdasarkan spesifikasi kebutuhan perusahaan penerbitan: <strong>warna dominan putih</strong>, layout simpel, profesional, dengan 3 fitur utama: <strong>Homepage Profil</strong>, <strong>Jurnal (OJS)</strong>, dan <strong>Bookstore</strong> (terinspirasi dari <em>emerald.com</em> dan <em>eduped.org</em>).
+      </p>
+
+      <!-- URL helper banner -->
+      <div class="mt-6 p-4 rounded-xl bg-slate-800/80 border border-slate-700 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs font-mono">
+        <div class="flex items-center gap-2 text-slate-300">
+          <i data-lucide="globe" class="w-4 h-4 text-emerald-400"></i>
+          <span>Akses Lokal Apache:</span>
+          <span class="text-emerald-300 font-bold">http://localhost/Abdurrahman/nalar-academy/</span>
+        </div>
+        <div class="text-slate-400">
+          Status: <span class="text-emerald-400 font-bold">Aktif & Siap Ditinjau</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+    
+    <!-- 3 Alternatif Cards Grid -->
+    <div>
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+          Pilihan Konsep & Alternatif Tampilan
+        </h2>
+        <p class="text-sm text-slate-600 mt-2">
+          Setiap alternatif telah dilengkapi halaman <strong>Beranda</strong>, direktori <strong>Jurnal (OJS)</strong>, dan katalog <strong>Bookstore</strong> interaktif.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- ================= ALT 1: EMERALD STYLE ================= -->
+        <div class="bg-white rounded-2xl border-2 border-emerald-500/80 p-6 flex flex-col justify-between shadow-lg relative group">
+          <div class="absolute -top-3.5 left-6 bg-emerald-700 text-white text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
+            Alternatif 1 &bull; Emerald Style
+          </div>
+
+          <div>
+            <div class="mt-2">
+              <span class="text-xs font-serif text-emerald-700 font-semibold tracking-wide uppercase">Editorial Academic</span>
+              <h3 class="font-serif1 text-2xl font-bold text-slate-900 mt-1">
+                Emerald Style
+              </h3>
+              <p class="text-xs text-slate-600 mt-2.5 leading-relaxed">
+                Terinspirasi langsung oleh <strong>emerald.com</strong>. Nuansa putih bersih dengan tipografi serif klasik yang sangat anggun, search bar terpadu yang besar, serta aksen emerald halus.
+              </p>
+            </div>
+
+            <!-- Features Highlights -->
+            <div class="mt-6 space-y-2 text-xs text-slate-700 border-t border-slate-100 pt-4">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i>
+                <span>Warna dominan: Pure White & Slate Navy</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i>
+                <span>Tipografi: <em>Merriweather</em> & <em>Inter</em></span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i>
+                <span>Unified Search Bar dengan filter tabs</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i>
+                <span>Etalase buku & OJS terintegrasi</span>
+              </div>
+            </div>
+
+            <!-- Preview Box Mockup -->
+            <div class="mt-6 p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="text-[11px] font-bold text-slate-500 mb-2 uppercase tracking-wider">Halaman yang Tersedia:</div>
+              <div class="space-y-1.5 text-xs">
+                <a href="alt1-emerald/index.html" class="flex items-center justify-between p-2 rounded bg-white hover:bg-emerald-50 border border-slate-200 hover:border-emerald-300 text-slate-800 transition">
+                  <span class="font-medium">1. Homepage Nalar Publishing</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-emerald-700"></i>
+                </a>
+                <a href="alt1-emerald/jurnal.html" class="flex items-center justify-between p-2 rounded bg-white hover:bg-emerald-50 border border-slate-200 hover:border-emerald-300 text-slate-800 transition">
+                  <span class="font-medium">2. Portal Jurnal (OJS)</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-emerald-700"></i>
+                </a>
+                <a href="alt1-emerald/bookstore.html" class="flex items-center justify-between p-2 rounded bg-white hover:bg-emerald-50 border border-slate-200 hover:border-emerald-300 text-slate-800 transition">
+                  <span class="font-medium">3. Katalog Bookstore</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-emerald-700"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100">
+            <a href="alt1-emerald/index.html" class="w-full py-3 bg-emerald-700 hover:bg-emerald-800 text-white rounded-xl font-bold text-xs text-center transition flex items-center justify-center gap-2 shadow-sm">
+              <span>Buka Alternatif 1 (Emerald)</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================= ALT 2: MODERN GRID ================= -->
+        <div class="bg-white rounded-2xl border border-slate-200 hover:border-zinc-900 p-6 flex flex-col justify-between shadow-md hover:shadow-xl transition relative group">
+          <div class="absolute -top-3.5 left-6 bg-zinc-950 text-white text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
+            Alternatif 2 &bull; Modern Grid
+          </div>
+
+          <div>
+            <div class="mt-2">
+              <span class="text-xs font-mono text-blue-600 font-semibold tracking-wide uppercase">Contemporary Swiss</span>
+              <h3 class="text-2xl font-extrabold text-zinc-950 mt-1">
+                Modern Monolithic
+              </h3>
+              <p class="text-xs text-zinc-600 mt-2.5 leading-relaxed">
+                Tampilan kontemporer ala <em>Scandinavian Academic</em>. Bersih, modular dengan grid presisi, tipografi sans-serif tegas, dan aksen kontras biru elektrik modern.
+              </p>
+            </div>
+
+            <!-- Features Highlights -->
+            <div class="mt-6 space-y-2 text-xs text-zinc-700 border-t border-zinc-100 pt-4">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-blue-600"></i>
+                <span>Warna dominan: Pure White & Deep Obsidian</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-blue-600"></i>
+                <span>Tipografi: <em>Plus Jakarta Sans</em> & <em>JetBrains Mono</em></span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-blue-600"></i>
+                <span>Modular Grid Cards & Micro-Borders</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-blue-600"></i>
+                <span>Live Filtering OJS & Bookstore Modal</span>
+              </div>
+            </div>
+
+            <!-- Preview Box Mockup -->
+            <div class="mt-6 p-4 rounded-xl bg-zinc-50 border border-zinc-200">
+              <div class="text-[11px] font-bold text-zinc-500 mb-2 uppercase tracking-wider">Halaman yang Tersedia:</div>
+              <div class="space-y-1.5 text-xs">
+                <a href="alt2-modern/index.html" class="flex items-center justify-between p-2 rounded bg-white hover:bg-zinc-100 border border-zinc-200 text-zinc-800 transition">
+                  <span class="font-medium">1. Homepage Nalar Publishing</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-zinc-950"></i>
+                </a>
+                <a href="alt2-modern/jurnal.html" class="flex items-center justify-between p-2 rounded bg-white hover:bg-zinc-100 border border-zinc-200 text-zinc-800 transition">
+                  <span class="font-medium">2. Portal Jurnal (OJS)</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-zinc-950"></i>
+                </a>
+                <a href="alt2-modern/bookstore.html" class="flex items-center justify-between p-2 rounded bg-white hover:bg-zinc-100 border border-zinc-200 text-zinc-800 transition">
+                  <span class="font-medium">3. Katalog Bookstore</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-zinc-950"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-zinc-100">
+            <a href="alt2-modern/index.html" class="w-full py-3 bg-zinc-950 hover:bg-blue-600 text-white rounded-xl font-bold text-xs text-center transition flex items-center justify-center gap-2 shadow-sm">
+              <span>Buka Alternatif 2 (Modern Grid)</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================= ALT 3: UNIVERSITY PRESS ================= -->
+        <div class="bg-white rounded-2xl border border-stone-200 hover:border-burgundy-700 p-6 flex flex-col justify-between shadow-md hover:shadow-xl transition relative group">
+          <div class="absolute -top-3.5 left-6 bg-burgundy-800 text-white text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
+            Alternatif 3 &bull; University Press
+          </div>
+
+          <div>
+            <div class="mt-2">
+              <span class="text-xs font-serif text-burgundy-700 font-semibold tracking-wide uppercase">Prestigious Academic</span>
+              <h3 class="font-serif2 text-2xl font-bold text-stone-900 mt-1">
+                Eduped Hybrid Style
+              </h3>
+              <p class="text-xs text-stone-600 mt-2.5 leading-relaxed">
+                Terinspirasi oleh kesederhanaan <strong>eduped.org</strong> dan wibawa <em>University Press</em>. Sangat to-the-point: Beranda Profil, Jurnal OJS, dan Bookstore dengan aksen burgundy prestisius.
+              </p>
+            </div>
+
+            <!-- Features Highlights -->
+            <div class="mt-6 space-y-2 text-xs text-stone-700 border-t border-stone-100 pt-4">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-burgundy-700"></i>
+                <span>Warna dominan: Academic Warm White</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-burgundy-700"></i>
+                <span>Tipografi: <em>Libre Baskerville</em> & <em>Inter</em></span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-burgundy-700"></i>
+                <span>Struktur navigasi ringkas (eduped.org style)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-burgundy-700"></i>
+                <span>Fokus otoritas riset & akreditasi SINTA</span>
+              </div>
+            </div>
+
+            <!-- Preview Box Mockup -->
+            <div class="mt-6 p-4 rounded-xl bg-stone-50 border border-stone-200">
+              <div class="text-[11px] font-bold text-stone-500 mb-2 uppercase tracking-wider">Halaman yang Tersedia:</div>
+              <div class="space-y-1.5 text-xs">
+                <a href="alt3-press/index.html" class="flex items-center justify-between p-2 rounded bg-white hover:bg-stone-100 border border-stone-200 text-stone-800 transition">
+                  <span class="font-medium">1. Homepage Profil Press</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-burgundy-700"></i>
+                </a>
+                <a href="alt3-press/jurnal.html" class="flex items-center justify-between p-2 rounded bg-white hover:bg-stone-100 border border-stone-200 text-stone-800 transition">
+                  <span class="font-medium">2. Portal Jurnal (OJS)</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-burgundy-700"></i>
+                </a>
+                <a href="alt3-press/bookstore.html" class="flex items-center justify-between p-2 rounded bg-white hover:bg-stone-100 border border-stone-200 text-stone-800 transition">
+                  <span class="font-medium">3. Katalog Bookstore</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-burgundy-700"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-stone-100">
+            <a href="alt3-press/index.html" class="w-full py-3 bg-burgundy-700 hover:bg-burgundy-800 text-white rounded-xl font-bold text-xs text-center transition flex items-center justify-center gap-2 shadow-sm">
+              <span>Buka Alternatif 3 (University Press)</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Live Interactive Previewer (Embedded View) -->
+    <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
+        <div>
+          <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+            <i data-lucide="monitor" class="w-5 h-5 text-slate-700"></i>
+            Live Frame Previewer
+          </h3>
+          <p class="text-xs text-slate-500 mt-0.5">Tinjau ketiga desain langsung di dalam frame ini tanpa harus membuka tab baru.</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <button class="live-btn active px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-900 text-white" onclick="changePreview('alt1-emerald/index.html', this)">
+            Alt 1: Emerald
+          </button>
+          <button class="live-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200" onclick="changePreview('alt2-modern/index.html', this)">
+            Alt 2: Modern Grid
+          </button>
+          <button class="live-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200" onclick="changePreview('alt3-press/index.html', this)">
+            Alt 3: University Press
+          </button>
+          <a id="openFullBtn" href="alt1-emerald/index.html" target="_blank" class="px-3 py-1.5 rounded-lg text-xs font-semibold border border-slate-300 hover:bg-slate-50 text-slate-700 flex items-center gap-1">
+            Buka Penuh <i data-lucide="external-link" class="w-3 h-3"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Preview Iframe -->
+      <div class="w-full h-[650px] border border-slate-200 rounded-xl overflow-hidden bg-slate-100 shadow-inner">
+        <iframe id="previewIframe" src="alt1-emerald/index.html" class="w-full h-full border-0"></iframe>
+      </div>
+    </div>
+
+    <!-- Comparison Matrix Table -->
+    <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+      <h3 class="text-xl font-bold text-slate-900 mb-2">Tabel Perbandingan Karakteristik Desain</h3>
+      <p class="text-xs text-slate-500 mb-6">Ringkasan aspek estetika, arsitektur informasi, dan kesesuaian target pembaca.</p>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs text-left border-collapse">
+          <thead>
+            <tr class="border-b border-slate-200 bg-slate-50 text-slate-700 uppercase font-semibold tracking-wider">
+              <th class="py-3 px-4">Aspek Desain</th>
+              <th class="py-3 px-4 text-emerald-800">Alternatif 1 (Emerald Style)</th>
+              <th class="py-3 px-4 text-blue-800">Alternatif 2 (Modern Grid)</th>
+              <th class="py-3 px-4 text-burgundy-800">Alternatif 3 (University Press)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Dominansi Warna</td>
+              <td class="py-3.5 px-4 text-slate-600">Pure White + Slate Navy + Aksen Emerald</td>
+              <td class="py-3.5 px-4 text-slate-600">White Canvas 100% + Obsidian Black + Electric Blue</td>
+              <td class="py-3.5 px-4 text-slate-600">Academic Warm White + Deep Burgundy Academic</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Gaya Tipografi</td>
+              <td class="py-3.5 px-4 text-slate-600">Editorial Serif (Merriweather) + Sans (Inter)</td>
+              <td class="py-3.5 px-4 text-slate-600">Clean Tech Sans (Plus Jakarta Sans) + Mono</td>
+              <td class="py-3.5 px-4 text-slate-600">Classic Scholarly Serif (Libre Baskerville)</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Pencarian & Navigasi</td>
+              <td class="py-3.5 px-4 text-slate-600">Search bar besar terpadu (Books + Journals + Topics)</td>
+              <td class="py-3.5 px-4 text-slate-600">Pill category switcher & instant live filtering</td>
+              <td class="py-3.5 px-4 text-slate-600">Navigasi ringkas 3 menu sentral (eduped.org style)</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Integrasi Jurnal OJS</td>
+              <td class="py-3.5 px-4 text-slate-600">Kartu jurnal editorial dengan badge SINTA & DOI Crossref</td>
+              <td class="py-3.5 px-4 text-slate-600">Modular high-contrast cards dengan metrik OJS</td>
+              <td class="py-3.5 px-4 text-slate-600">Direktori formal universitas dengan fokus etika COPE</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Fitur Bookstore</td>
+              <td class="py-3.5 px-4 text-slate-600">Etalase kartu buku sampul elegan + modal sinopsis</td>
+              <td class="py-3.5 px-4 text-slate-600">Modern grid 4-kolom + order instan via WhatsApp</td>
+              <td class="py-3.5 px-4 text-slate-600">Format katalog pustaka/monograf akademik ber-ISBN</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Vibe & Kesan Utama</td>
+              <td class="py-3.5 px-4 text-slate-600">Scholarly, luas, bersih, berwibawa internasional</td>
+              <td class="py-3.5 px-4 text-slate-600">Progresif, inovatif, rapi, modern</td>
+              <td class="py-3.5 px-4 text-slate-600">Klasik, terpercaya, institusional, prestisius</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500">
+    <p>Nalar Academy Publishing Design Showcase &bull; Dibangun dengan Tailwind CSS & Lucide Icons</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    function changePreview(url, el) {
+      document.getElementById('previewIframe').src = url;
+      document.getElementById('openFullBtn').href = url;
+
+      document.querySelectorAll('.live-btn').forEach(btn => {
+        btn.classList.remove('bg-slate-900', 'text-white', 'active');
+        btn.classList.add('bg-slate-100', 'text-slate-700');
+      });
+      el.classList.add('bg-slate-900', 'text-white', 'active');
+      el.classList.remove('bg-slate-100', 'text-slate-700');
+    }
+  </script>
+</body>
+</html>

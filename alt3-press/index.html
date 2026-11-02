@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nalar Academy Press - Alternatif 3 (University Press Style)</title>
+  <!-- Google Fonts: Libre Baskerville & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Libre Baskerville"', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            burgundy: {
+              700: '#881337',
+              800: '#700f2b',
+              900: '#4c0519',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen flex flex-col bg-white text-stone-800 antialiased selection:bg-rose-100 selection:text-rose-900">
+
+  <!-- ================= PREVIEW SWITCHER BAR ================= -->
+  <div class="bg-stone-900 text-white text-xs py-2 px-4 border-b border-stone-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center space-x-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-rose-400 animate-pulse"></span>
+        <span class="font-semibold text-stone-200">Mode Preview Desain:</span>
+        <span class="bg-rose-950 text-rose-300 px-2 py-0.5 rounded font-mono font-medium border border-rose-800">Alternatif 3: University Press (Eduped Hybrid Style)</span>
+      </div>
+      <div class="flex items-center space-x-1 sm:space-x-3 text-xs">
+        <a href="../alt1-emerald/index.html" class="px-2 py-1 rounded text-stone-400 hover:text-white hover:bg-stone-800 transition">Alt 1 (Emerald)</a>
+        <a href="../alt2-modern/index.html" class="px-2 py-1 rounded text-stone-400 hover:text-white hover:bg-stone-800 transition">Alt 2 (Modern Grid)</a>
+        <a href="index.html" class="px-2 py-1 rounded bg-white text-stone-900 font-bold hover:bg-stone-100">Alt 3 (University Press)</a>
+        <span class="text-stone-700">|</span>
+        <a href="../index.html" class="px-2.5 py-1 rounded bg-stone-800 text-amber-300 hover:bg-stone-700 font-medium flex items-center gap-1">
+          <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i> Hub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Traditional Top Strip -->
+  <div class="border-b border-stone-200 bg-stone-50 py-1.5 text-[11px] text-stone-600">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <div>Lembaga Penerbitan Akademik & Pengelola Jurnal Ilmiah Terakreditasi</div>
+      <div class="flex items-center space-x-4">
+        <span>Anggota IKAPI No. 492/JBA</span>
+        <span>&bull;</span>
+        <a href="https://wa.me/6281234567890" class="hover:text-stone-900">Kontak Redaksi: +62 812-3456-7890</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Classic Scholarly Header (Center-Aligned Prestigious) -->
+  <header class="border-b border-stone-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center">
+      <a href="index.html" class="inline-block group">
+        <div class="flex items-center justify-center gap-3">
+          <div class="w-10 h-10 rounded border border-stone-800 flex items-center justify-center font-serif text-lg font-bold text-stone-900">
+            NA
+          </div>
+          <span class="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-stone-900 group-hover:text-burgundy-700 transition">
+            NALAR ACADEMY PRESS
+          </span>
+        </div>
+        <div class="text-[11px] uppercase tracking-[0.2em] text-stone-500 font-serif mt-1">
+          Penerbit Ilmiah & Direktori Jurnal OJS
+        </div>
+      </a>
+
+      <!-- 3 Core Navigation Items (As in eduped.org) -->
+      <nav class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-center space-x-8 text-xs font-semibold uppercase tracking-wider text-stone-600">
+        <a href="index.html" class="text-burgundy-700 font-bold border-b-2 border-burgundy-700 pb-1">
+          Profil / Beranda
+        </a>
+        <a href="jurnal.html" class="hover:text-burgundy-700 transition pb-1">
+          Jurnal Ilmiah (OJS)
+        </a>
+        <a href="bookstore.html" class="hover:text-burgundy-700 transition pb-1">
+          Bookstore & Katalog
+        </a>
+        <a href="#prosedur" class="hover:text-burgundy-700 transition pb-1">
+          Alur Terbit
+        </a>
+        <a href="#kontak" class="hover:text-burgundy-700 transition pb-1">
+          Kontak
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Editorial Hero Banner -->
+  <section class="py-16 bg-stone-50/50 border-b border-stone-200 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <span class="text-burgundy-700 font-serif italic text-sm">Tridharma Perguruan Tinggi & Integritas Publikasi</span>
+      <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 mt-3 leading-tight">
+        Dedikasi untuk Diseminasi Ilmu & Pemikiran Kritis.
+      </h1>
+      <p class="mt-5 text-stone-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto font-light">
+        Nalar Academy Press menyediakan wadah publikasi ilmiah yang kredibel bagi dosen, peneliti, dan praktisi di seluruh Indonesia melalui portal jurnal berbasis OJS dan percetakan buku berstandar akademik.
+      </p>
+
+      <div class="mt-8 flex justify-center gap-4">
+        <a href="jurnal.html" class="px-6 py-2.5 bg-burgundy-700 hover:bg-burgundy-800 text-white rounded text-xs font-semibold uppercase tracking-wider transition shadow-sm">
+          Akses Jurnal OJS
+        </a>
+        <a href="bookstore.html" class="px-6 py-2.5 border border-stone-300 hover:border-stone-800 bg-white text-stone-800 rounded text-xs font-semibold uppercase tracking-wider transition">
+          Katalog Buku
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Focus 1: Jurnal OJS Preview -->
+  <section class="py-14 bg-white border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-baseline mb-8 border-b border-stone-200 pb-3">
+        <div>
+          <h2 class="font-serif text-xl sm:text-2xl font-bold text-stone-900">
+            Jurnal Ilmiah Berkala (OJS 3)
+          </h2>
+          <p class="text-xs text-stone-500 mt-1">Dikelola secara terbuka (Open Access) dengan nomor ISSN resmi dan akreditasi SINTA.</p>
+        </div>
+        <a href="jurnal.html" class="text-xs font-bold text-burgundy-700 hover:underline uppercase tracking-wider">
+          Lihat Semua Jurnal &rarr;
+        </a>
+      </div>
+
+      <!-- Journal Cards in Classic Press Style -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- J1 -->
+        <div class="border border-stone-200 p-5 rounded bg-white hover:border-burgundy-700 transition">
+          <div class="flex items-center justify-between text-xs mb-2">
+            <span class="font-serif font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 text-[10px]">
+              SINTA 2
+            </span>
+            <span class="text-[11px] text-stone-400 font-mono">P-ISSN: 2339-0794</span>
+          </div>
+          <h3 class="font-serif text-base font-bold text-stone-900">
+            <a href="jurnal.html">Jurnal Nalar Pendidikan (JNP)</a>
+          </h3>
+          <p class="text-xs text-stone-600 mt-2 leading-relaxed font-light">
+            Fokus pada kajian pedagogi, model pembelajaran inovatif, kurikulum berbasis capaian, dan teknologi pendidikan.
+          </p>
+          <div class="mt-4 pt-3 border-t border-stone-100 flex justify-between items-center text-xs">
+            <span class="text-stone-500">Terbit: Juni & Des</span>
+            <a href="https://journal.nalaracademy.com" target="_blank" class="font-semibold text-burgundy-700 hover:underline">
+              Portal OJS &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- J2 -->
+        <div class="border border-stone-200 p-5 rounded bg-white hover:border-burgundy-700 transition">
+          <div class="flex items-center justify-between text-xs mb-2">
+            <span class="font-serif font-bold text-blue-800 bg-blue-50 px-2 py-0.5 rounded border border-blue-200 text-[10px]">
+              SINTA 3
+            </span>
+            <span class="text-[11px] text-stone-400 font-mono">P-ISSN: 2548-8124</span>
+          </div>
+          <h3 class="font-serif text-base font-bold text-stone-900">
+            <a href="jurnal.html">Jurnal Kajian Sosial & Humaniora</a>
+          </h3>
+          <p class="text-xs text-stone-600 mt-2 leading-relaxed font-light">
+            Memuat hasil penelitian orisinal bidang kebijakan publik, sosiologi kontemporer, dan dinamika kebudayaan masyarakat.
+          </p>
+          <div class="mt-4 pt-3 border-t border-stone-100 flex justify-between items-center text-xs">
+            <span class="text-stone-500">Terbit: Apr, Ags, Des</span>
+            <a href="https://journal.nalaracademy.com" target="_blank" class="font-semibold text-burgundy-700 hover:underline">
+              Portal OJS &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- J3 -->
+        <div class="border border-stone-200 p-5 rounded bg-white hover:border-burgundy-700 transition">
+          <div class="flex items-center justify-between text-xs mb-2">
+            <span class="font-serif font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded border border-amber-200 text-[10px]">
+              SINTA 4
+            </span>
+            <span class="text-[11px] text-stone-400 font-mono">P-ISSN: 2614-6633</span>
+          </div>
+          <h3 class="font-serif text-base font-bold text-stone-900">
+            <a href="jurnal.html">Jurnal Inovasi Sains & Terapan</a>
+          </h3>
+          <p class="text-xs text-stone-600 mt-2 leading-relaxed font-light">
+            Kajian terapan algoritma komputasi, sistem informasi cerdas, rekayasa perangkat lunak, dan kecerdasan artifisial.
+          </p>
+          <div class="mt-4 pt-3 border-t border-stone-100 flex justify-between items-center text-xs">
+            <span class="text-stone-500">Terbit: Mar & Sep</span>
+            <a href="https://journal.nalaracademy.com" target="_blank" class="font-semibold text-burgundy-700 hover:underline">
+              Portal OJS &rarr;
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Focus 2: Bookstore Preview -->
+  <section class="py-14 bg-stone-50/50 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-baseline mb-8 border-b border-stone-200 pb-3">
+        <div>
+          <h2 class="font-serif text-xl sm:text-2xl font-bold text-stone-900">
+            Koleksi Terbitan Nalar Bookstore
+          </h2>
+          <p class="text-xs text-stone-500 mt-1">Buku referensi, monograf riset, dan buku teks perguruan tinggi ber-ISBN.</p>
+        </div>
+        <a href="bookstore.html" class="text-xs font-bold text-burgundy-700 hover:underline uppercase tracking-wider">
+          Buka Katalog Lengkap &rarr;
+        </a>
+      </div>
+
+      <!-- Book Shelf (University Press Minimalist List) -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        
+        <!-- Book 1 -->
+        <div class="bg-white border border-stone-200 p-4 rounded flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="aspect-[3/4] bg-stone-900 rounded p-4 text-white flex flex-col justify-between text-center border-t-4 border-burgundy-700">
+              <span class="text-[9px] font-serif uppercase tracking-widest text-stone-300">Nalar Press</span>
+              <div>
+                <h4 class="font-serif text-xs font-bold leading-snug">Metodologi Riset Kualitatif</h4>
+                <p class="text-[9px] text-stone-400 mt-1">Sosial & Humaniora</p>
+              </div>
+              <span class="text-[8px] text-stone-400">Dr. H. Abdurrahman</span>
+            </div>
+            <div class="mt-3">
+              <span class="text-[10px] text-stone-400 font-mono">ISBN: 978-623-8123-01-2</span>
+              <h3 class="font-serif text-xs font-bold text-stone-900 line-clamp-2 mt-0.5">
+                Metodologi Penelitian Kualitatif dalam Sosial
+              </h3>
+              <p class="text-[11px] text-stone-500 mt-0.5">Dr. H. Abdurrahman, M.Pd.</p>
+              <div class="text-sm font-bold text-stone-900 mt-2">Rp 95.000</div>
+            </div>
+          </div>
+          <div class="mt-3 pt-2 border-t border-stone-100">
+            <a href="bookstore.html" class="block w-full py-1.5 text-center text-xs font-semibold bg-stone-100 hover:bg-burgundy-700 hover:text-white text-stone-800 rounded transition">
+              Detail Buku
+            </a>
+          </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="bg-white border border-stone-200 p-4 rounded flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="aspect-[3/4] bg-stone-800 rounded p-4 text-white flex flex-col justify-between text-center border-t-4 border-amber-600">
+              <span class="text-[9px] font-serif uppercase tracking-widest text-stone-300">Nalar Press</span>
+              <div>
+                <h4 class="font-serif text-xs font-bold leading-snug">Filsafat Ilmu & Etika</h4>
+                <p class="text-[9px] text-stone-400 mt-1">Integritas Akademik</p>
+              </div>
+              <span class="text-[8px] text-stone-400">Prof. Dr. M. Syukri</span>
+            </div>
+            <div class="mt-3">
+              <span class="text-[10px] text-stone-400 font-mono">ISBN: 978-623-8123-02-9</span>
+              <h3 class="font-serif text-xs font-bold text-stone-900 line-clamp-2 mt-0.5">
+                Filsafat Ilmu dan Etika Akademik: Integritas
+              </h3>
+              <p class="text-[11px] text-stone-500 mt-0.5">Prof. Dr. M. Syukri, M.Phil.</p>
+              <div class="text-sm font-bold text-stone-900 mt-2">Rp 85.000</div>
+            </div>
+          </div>
+          <div class="mt-3 pt-2 border-t border-stone-100">
+            <a href="bookstore.html" class="block w-full py-1.5 text-center text-xs font-semibold bg-stone-100 hover:bg-burgundy-700 hover:text-white text-stone-800 rounded transition">
+              Detail Buku
+            </a>
+          </div>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="bg-white border border-stone-200 p-4 rounded flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="aspect-[3/4] bg-stone-900 rounded p-4 text-white flex flex-col justify-between text-center border-t-4 border-emerald-600">
+              <span class="text-[9px] font-serif uppercase tracking-widest text-stone-300">Nalar Press</span>
+              <div>
+                <h4 class="font-serif text-xs font-bold leading-snug">Desain Instruksional OBE</h4>
+                <p class="text-[9px] text-stone-400 mt-1">Outcome-Based Education</p>
+              </div>
+              <span class="text-[8px] text-stone-400">Dr. Rina Fitriani</span>
+            </div>
+            <div class="mt-3">
+              <span class="text-[10px] text-stone-400 font-mono">ISBN: 978-623-8123-03-6</span>
+              <h3 class="font-serif text-xs font-bold text-stone-900 line-clamp-2 mt-0.5">
+                Desain Instruksional Modern Berbasis OBE
+              </h3>
+              <p class="text-[11px] text-stone-500 mt-0.5">Dr. Rina Fitriani, M.Ed.</p>
+              <div class="text-sm font-bold text-stone-900 mt-2">Rp 110.000</div>
+            </div>
+          </div>
+          <div class="mt-3 pt-2 border-t border-stone-100">
+            <a href="bookstore.html" class="block w-full py-1.5 text-center text-xs font-semibold bg-stone-100 hover:bg-burgundy-700 hover:text-white text-stone-800 rounded transition">
+              Detail Buku
+            </a>
+          </div>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="bg-white border border-stone-200 p-4 rounded flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="aspect-[3/4] bg-stone-800 rounded p-4 text-white flex flex-col justify-between text-center border-t-4 border-sky-600">
+              <span class="text-[9px] font-serif uppercase tracking-widest text-stone-300">Nalar Press</span>
+              <div>
+                <h4 class="font-serif text-xs font-bold leading-snug">AI & Transformasi Digital</h4>
+                <p class="text-[9px] text-stone-400 mt-1">Pembelajaran Kampus</p>
+              </div>
+              <span class="text-[8px] text-stone-400">Hendra Wijaya & Tim</span>
+            </div>
+            <div class="mt-3">
+              <span class="text-[10px] text-stone-400 font-mono">ISBN: 978-623-8123-04-3</span>
+              <h3 class="font-serif text-xs font-bold text-stone-900 line-clamp-2 mt-0.5">
+                Kecerdasan Buatan & Transformasi Digital
+              </h3>
+              <p class="text-[11px] text-stone-500 mt-0.5">Hendra W. & Dr. Gunawan</p>
+              <div class="text-sm font-bold text-stone-900 mt-2">Rp 125.000</div>
+            </div>
+          </div>
+          <div class="mt-3 pt-2 border-t border-stone-100">
+            <a href="bookstore.html" class="block w-full py-1.5 text-center text-xs font-semibold bg-stone-100 hover:bg-burgundy-700 hover:text-white text-stone-800 rounded transition">
+              Detail Buku
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Prosedur & Etika Penerbitan -->
+  <section id="prosedur" class="py-14 bg-white border-b border-stone-200">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-serif text-2xl font-bold text-stone-900">Alur Penerbitan di Nalar Academy Press</h2>
+      <p class="text-xs text-stone-500 mt-2">Menjamin transparansi, standar mutu editorial, dan legalitas hak kekayaan intelektual.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 text-left text-xs">
+        <div class="border border-stone-200 p-5 rounded">
+          <div class="font-serif text-burgundy-700 font-bold text-lg mb-1">01. Pengajuan Naskah</div>
+          <p class="text-stone-600 leading-relaxed font-light">Penyerahan draf lengkap karya ilmiah disertai surat pernyataan keaslian karya dari penulis.</p>
+        </div>
+        <div class="border border-stone-200 p-5 rounded">
+          <div class="font-serif text-burgundy-700 font-bold text-lg mb-1">02. Penelaahan Mutu</div>
+          <p class="text-stone-600 leading-relaxed font-light">Proses peer-review oleh dewan editor ahli, penyuntingan bahasa (copy-editing), serta cek similaritas Turnitin.</p>
+        </div>
+        <div class="border border-stone-200 p-5 rounded">
+          <div class="font-serif text-burgundy-700 font-bold text-lg mb-1">03. ISBN & Publikasi</div>
+          <p class="text-stone-600 leading-relaxed font-light">Penerbitan nomor ISBN resmi dari Perpustakaan Nasional RI, pencetakan fisik atau penayangan di platform OJS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontak" class="bg-stone-50 border-t border-stone-200 py-10 text-xs text-stone-600">
+    <div class="max-w-6xl mx-auto px-4 text-center space-y-3">
+      <div class="font-serif text-base font-bold text-stone-900">NALAR ACADEMY PRESS</div>
+      <p class="text-stone-500 max-w-lg mx-auto">
+        Jl. Cendekia Raya No. 18, Jakarta Selatan &bull; Email: redaksi@nalaracademy.com &bull; WhatsApp: +62 812-3456-7890
+      </p>
+      <div class="text-[11px] text-stone-400 pt-3 border-t border-stone-200">
+        &copy; 2026 Nalar Academy Press. Semua hak cipta dilindungi. Desain Alternatif 3 (University Press Style).
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
