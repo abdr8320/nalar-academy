@@ -28,25 +28,30 @@
       }
     }
   </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-serif { font-family: 'Libre Baskerville', serif; }
+    /* Efek jilid buku fisik yang realistis */
+    .book-spine {
+      box-shadow: inset 4px 0 6px -2px rgba(0,0,0,0.35), inset -2px 0 4px -1px rgba(255,255,255,0.15), 0 8px 20px -4px rgba(0,0,0,0.18);
+    }
+  </style>
 </head>
 <body class="min-h-screen flex flex-col bg-white text-stone-800 antialiased selection:bg-rose-100 selection:text-rose-900">
 
   <!-- ================= PREVIEW SWITCHER BAR ================= -->
-  <div class="bg-stone-900 text-white text-xs py-2 px-4 border-b border-stone-800 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-      <div class="flex items-center space-x-2">
-        <span class="inline-block w-2 h-2 rounded-full bg-rose-400 animate-pulse"></span>
-        <span class="font-semibold text-stone-200">Mode Preview Desain:</span>
-        <span class="bg-rose-950 text-rose-300 px-2 py-0.5 rounded font-mono font-medium border border-rose-800">Alternatif 3: University Press &bull; Halaman Detail Buku</span>
+  <div class="bg-stone-900 text-stone-200 text-xs py-2 px-4 border-b border-stone-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <span class="font-medium text-white">Pratinjau Desain:</span>
+        <span class="text-stone-300 font-medium">Alternatif 3 &mdash; University Press Style &bull; Detail Monograf</span>
       </div>
-      <div class="flex items-center space-x-1 sm:space-x-3 text-xs">
-        <a href="../alt1-emerald/detail-buku.html" class="px-2 py-1 rounded text-stone-400 hover:text-white hover:bg-stone-800 transition">Alt 1 (Emerald)</a>
-        <a href="../alt2-modern/detail-buku.html" class="px-2 py-1 rounded text-stone-400 hover:text-white hover:bg-stone-800 transition">Alt 2 (Modern Grid)</a>
-        <a href="detail-buku.html" class="px-2 py-1 rounded bg-white text-stone-900 font-bold hover:bg-stone-100">Alt 3 (University Press)</a>
-        <span class="text-stone-700">|</span>
-        <a href="../index.html" class="px-2.5 py-1 rounded bg-stone-800 text-amber-300 hover:bg-stone-700 font-medium flex items-center gap-1">
-          <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i> Hub
-        </a>
+      <div class="flex items-center space-x-2 text-xs">
+        <a href="../alt1-emerald/detail-buku.html" class="px-2.5 py-1 rounded text-stone-300 hover:text-white hover:bg-stone-800 transition">Alt 1 (Emerald)</a>
+        <a href="../alt2-modern/detail-buku.html" class="px-2.5 py-1 rounded text-stone-300 hover:text-white hover:bg-stone-800 transition">Alt 2 (Modern Grid)</a>
+        <a href="detail-buku.html" class="px-2.5 py-1 rounded bg-white text-stone-900 font-semibold">Alt 3 (University Press)</a>
+        <span class="text-stone-600">|</span>
+        <a href="../index.html" class="px-2.5 py-1 rounded bg-stone-800 text-amber-300 hover:bg-stone-700 font-medium">Hub Showcase</a>
       </div>
     </div>
   </div>
@@ -102,21 +107,23 @@
         <!-- Left Column: Book Monograph Card (4 Cols) -->
         <div class="md:col-span-4 space-y-6">
           <div class="border border-stone-200 p-4 rounded bg-stone-50">
-            <!-- University Press Cover -->
-            <div class="aspect-[3/4] bg-stone-900 rounded p-6 text-white flex flex-col justify-between text-center border-t-8 border-burgundy-700 shadow-lg">
-              <span class="text-[10px] font-serif uppercase tracking-[0.25em] text-stone-300">
-                NALAR ACADEMY PRESS
-              </span>
-              <div class="space-y-2">
-                <h3 class="font-serif text-lg font-bold leading-tight">
-                  Metodologi Penelitian Kualitatif
-                </h3>
-                <p class="text-[11px] text-stone-300 font-light">
-                  dalam Ilmu Sosial & Humaniora
-                </p>
-              </div>
-              <div class="border-t border-stone-700 pt-2 text-[10px] text-stone-400 font-serif">
-                Dr. H. Abdurrahman, M.Pd.
+            <!-- Realistic University Press Monograph Cover -->
+            <div class="aspect-[1/1.45] bg-[#4c0519] rounded-xs p-6 text-white relative book-spine overflow-hidden shadow-lg">
+              <div class="h-full flex flex-col justify-between border border-amber-200/40 p-5 text-center">
+                <span class="text-[10px] font-serif uppercase tracking-[0.25em] text-amber-200">
+                  NALAR ACADEMY PRESS
+                </span>
+                <div class="space-y-2">
+                  <h3 class="font-serif text-lg font-bold leading-tight">
+                    Metodologi Penelitian Kualitatif
+                  </h3>
+                  <p class="text-[11px] text-rose-200 font-light">
+                    dalam Ilmu Sosial & Humaniora
+                  </p>
+                </div>
+                <div class="border-t border-white/20 pt-2 text-[10px] text-rose-100 font-serif">
+                  Dr. H. Abdurrahman, M.Pd.
+                </div>
               </div>
             </div>
 

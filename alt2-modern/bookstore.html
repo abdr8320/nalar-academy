@@ -6,76 +6,62 @@
   <title>Nalar Bookstore - Alternatif 2 (Modern Grid Style)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace'],
-          },
-          colors: {
-            brand: {
-              500: '#2563eb',
-              600: '#1d4ed8',
-            }
-          }
-        }
-      }
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .book-spine {
+      box-shadow: inset 4px 0 6px -2px rgba(0,0,0,0.35), inset -2px 0 4px -1px rgba(255,255,255,0.15), 0 6px 16px -3px rgba(0,0,0,0.15);
     }
-  </script>
+  </style>
 </head>
-<body class="min-h-screen flex flex-col bg-white text-zinc-900 antialiased selection:bg-blue-100 selection:text-blue-900">
+<body class="bg-white text-zinc-900 antialiased selection:bg-zinc-100 selection:text-zinc-900 min-h-screen flex flex-col">
 
   <!-- ================= PREVIEW SWITCHER BAR ================= -->
-  <div class="bg-zinc-950 text-white text-xs py-2 px-4 border-b border-zinc-800 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-      <div class="flex items-center space-x-2">
-        <span class="inline-block w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
-        <span class="font-semibold text-zinc-200">Mode Preview Desain:</span>
-        <span class="bg-blue-950 text-blue-300 px-2 py-0.5 rounded font-mono font-medium border border-blue-800">Alternatif 2: Modern Grid &bull; Halaman Bookstore</span>
+  <div class="bg-zinc-900 text-zinc-200 text-xs py-2 px-4 border-b border-zinc-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <span class="font-medium text-white">Pratinjau Desain:</span>
+        <span class="text-zinc-300 font-medium">Alternatif 2 &mdash; Modern Grid &bull; Halaman Bookstore</span>
       </div>
-      <div class="flex items-center space-x-1 sm:space-x-3 text-xs">
-        <a href="../alt1-emerald/bookstore.html" class="px-2 py-1 rounded text-zinc-400 hover:text-white hover:bg-zinc-900 transition">Alt 1 (Emerald)</a>
-        <a href="index.html" class="px-2 py-1 rounded bg-white text-zinc-950 font-bold hover:bg-zinc-100">Alt 2 (Modern Grid)</a>
-        <a href="../alt3-press/bookstore.html" class="px-2 py-1 rounded text-zinc-400 hover:text-white hover:bg-zinc-900 transition">Alt 3 (University Press)</a>
-        <span class="text-zinc-700">|</span>
-        <a href="../index.html" class="px-2.5 py-1 rounded bg-zinc-900 text-amber-300 hover:bg-zinc-800 font-medium flex items-center gap-1 border border-zinc-800">
-          <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i> Hub
-        </a>
+      <div class="flex items-center space-x-2 text-xs">
+        <a href="../alt1-emerald/bookstore.html" class="px-2.5 py-1 rounded text-zinc-300 hover:text-white hover:bg-zinc-800 transition">Alt 1 (Emerald)</a>
+        <a href="index.html" class="px-2.5 py-1 rounded bg-white text-zinc-900 font-bold">Alt 2 (Modern Grid)</a>
+        <a href="../alt3-press/bookstore.html" class="px-2.5 py-1 rounded text-zinc-300 hover:text-white hover:bg-zinc-800 transition">Alt 3 (University Press)</a>
+        <span class="text-zinc-600">|</span>
+        <a href="../index.html" class="px-2.5 py-1 rounded bg-zinc-800 text-amber-300 hover:bg-zinc-700 font-medium">Hub Showcase</a>
       </div>
     </div>
   </div>
 
   <!-- Header -->
-  <header class="border-b border-zinc-200 bg-white/95 backdrop-blur-md sticky top-[33px] z-40">
+  <header class="border-b border-zinc-200 bg-white sticky top-[33px] z-40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         <a href="index.html" class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-zinc-950 text-white flex items-center justify-center font-bold text-lg">
-            N/A
+          <div class="w-10 h-10 bg-zinc-900 text-white flex items-center justify-center font-bold text-base tracking-tight rounded-sm">
+            NA
           </div>
-          <div class="flex flex-col">
-            <span class="text-lg font-extrabold tracking-tight text-zinc-950">NALAR ACADEMY</span>
-            <span class="text-[10px] font-mono tracking-widest text-zinc-400 uppercase -mt-0.5">PUBLISHING & OJS PORTAL</span>
+          <div>
+            <span class="text-lg font-bold tracking-tight text-zinc-900 block leading-tight">NALAR ACADEMY</span>
+            <span class="text-[10px] font-semibold tracking-wider text-zinc-500 uppercase block">Publishing & Bookstore</span>
           </div>
         </a>
 
         <nav class="hidden md:flex items-center space-x-1 font-semibold text-sm text-zinc-600">
-          <a href="index.html" class="px-4 py-2 rounded-md hover:bg-zinc-50 hover:text-zinc-950 transition">Beranda</a>
+          <a href="index.html" class="px-4 py-2 rounded hover:text-zinc-900 transition">Beranda</a>
           <!-- Menu Jurnal: di production langsung redirect ke OJS, pada prototipe tidak ada action -->
-          <a href="javascript:void(0)" class="px-4 py-2 rounded-md hover:bg-zinc-50 hover:text-zinc-950 transition cursor-pointer">Jurnal (OJS)</a>
-          <a href="bookstore.html" class="px-4 py-2 rounded-md bg-zinc-100 text-zinc-950 font-bold">Bookstore</a>
-          <a href="index.html#profil" class="px-4 py-2 rounded-md hover:bg-zinc-50 hover:text-zinc-950 transition">Tentang Kami</a>
-          <a href="index.html#kontak" class="px-4 py-2 rounded-md hover:bg-zinc-50 hover:text-zinc-950 transition">Kontak</a>
+          <a href="javascript:void(0)" class="px-4 py-2 rounded hover:text-zinc-900 transition cursor-pointer">Jurnal (OJS)</a>
+          <a href="bookstore.html" class="px-4 py-2 rounded bg-zinc-100 text-zinc-900 font-bold">Bookstore</a>
+          <a href="index.html#profil" class="px-4 py-2 rounded hover:text-zinc-900 transition">Tentang Kami</a>
+          <a href="index.html#kontak" class="px-4 py-2 rounded hover:text-zinc-900 transition">Kontak</a>
         </nav>
 
         <div class="hidden lg:flex items-center space-x-3">
-          <a href="https://wa.me/6281234567890?text=Halo%20Nalar%20Bookstore" target="_blank" class="px-4 py-2 text-xs font-bold rounded-lg border border-zinc-200 hover:border-zinc-950 text-zinc-800 transition flex items-center gap-1.5">
-            <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-600"></i> CS Order WhatsApp
+          <a href="https://wa.me/6281234567890?text=Halo%20Nalar%20Bookstore" target="_blank"
+             class="px-4 py-2 text-xs font-semibold rounded border border-zinc-300 text-zinc-800 hover:bg-zinc-50 transition">
+            Layanan WhatsApp CS
           </a>
         </div>
       </div>
@@ -83,40 +69,39 @@
   </header>
 
   <!-- Title & Controls -->
-  <section class="py-12 bg-zinc-50 border-b border-zinc-200">
+  <section class="py-10 bg-zinc-50 border-b border-zinc-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <span class="text-blue-600 font-mono text-xs font-bold uppercase tracking-wider">// ACADEMIC BOOKSTORE</span>
-        <h1 class="text-3xl sm:text-4xl font-extrabold text-zinc-950 tracking-tight mt-1">
+      <div class="max-w-2xl">
+        <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider block mb-1">Katalog Resmi Perpustakaan</span>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-zinc-950 tracking-tight">
           Katalog Buku & Publikasi Akademik
         </h1>
-        <p class="mt-2 text-sm text-zinc-600 leading-relaxed font-normal">
-          Jelajahi etalase buku ajar, monograf hasil penelitian, dan buku referensi ber-ISBN terbitan Nalar Academy Publishing.
+        <p class="mt-2 text-xs sm:text-sm text-zinc-600 leading-relaxed font-normal">
+          Jelajahi etalase buku ajar, monograf riset, dan buku referensi ber-ISBN terbitan Nalar Academy Publishing.
         </p>
       </div>
 
-      <!-- Live Search & Categories -->
-      <div class="mt-8 flex flex-col md:flex-row gap-4 items-center justify-between">
-        <div class="w-full md:w-96 relative">
-          <i data-lucide="search" class="w-4 h-4 text-zinc-400 absolute left-3 top-3"></i>
-          <input type="text" id="searchModernBook" placeholder="Cari judul buku atau penulis..." 
-                 class="w-full pl-9 pr-4 py-2.5 text-xs bg-white border border-zinc-200 rounded-lg focus:outline-none focus:border-zinc-900 font-medium">
+      <!-- Clean Search & Filter Pills -->
+      <div class="mt-6 flex flex-col md:flex-row gap-4 items-center justify-between">
+        <div class="w-full md:w-80 relative">
+          <input type="text" id="modernSearchInput" placeholder="Cari judul buku, penulis, atau ISBN..." 
+                 class="w-full px-3.5 py-2 text-xs bg-white border border-zinc-300 rounded focus:outline-none focus:border-zinc-900 font-medium">
         </div>
-        <div class="flex flex-wrap items-center gap-2 w-full md:w-auto" id="bookTabs">
-          <button class="btab active px-3.5 py-2 rounded-lg text-xs font-bold bg-zinc-950 text-white" data-c="all">
+        <div class="flex flex-wrap items-center gap-1.5 w-full md:w-auto" id="modernCatButtons">
+          <button class="m-cat-btn active px-3 py-1.5 rounded text-xs font-bold bg-zinc-950 text-white" data-cat="all">
             Semua
           </button>
-          <button class="btab px-3.5 py-2 rounded-lg text-xs font-semibold bg-white border border-zinc-200 text-zinc-700 hover:border-zinc-950" data-c="metodologi">
+          <button class="m-cat-btn px-3 py-1.5 rounded text-xs font-medium border border-zinc-300 text-zinc-700 hover:bg-zinc-100" data-cat="metodologi">
             Metodologi
           </button>
-          <button class="btab px-3.5 py-2 rounded-lg text-xs font-semibold bg-white border border-zinc-200 text-zinc-700 hover:border-zinc-950" data-c="pendidikan">
+          <button class="m-cat-btn px-3 py-1.5 rounded text-xs font-medium border border-zinc-300 text-zinc-700 hover:bg-zinc-100" data-cat="pendidikan">
             Pendidikan
           </button>
-          <button class="btab px-3.5 py-2 rounded-lg text-xs font-semibold bg-white border border-zinc-200 text-zinc-700 hover:border-zinc-950" data-c="soshum">
+          <button class="m-cat-btn px-3 py-1.5 rounded text-xs font-medium border border-zinc-300 text-zinc-700 hover:bg-zinc-100" data-cat="soshum">
             Sosial Humaniora
           </button>
-          <button class="btab px-3.5 py-2 rounded-lg text-xs font-semibold bg-white border border-zinc-200 text-zinc-700 hover:border-zinc-950" data-c="sains">
-            Sains & AI
+          <button class="m-cat-btn px-3 py-1.5 rounded text-xs font-medium border border-zinc-300 text-zinc-700 hover:bg-zinc-100" data-cat="sains">
+            Sains & Teknologi
           </button>
         </div>
       </div>
@@ -127,139 +112,111 @@
   <main class="py-12 bg-white flex-grow">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6" id="modernGridContainer">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6" id="modernBookGrid">
         
-        <!-- Book 1 -->
-        <div class="mbook-card bg-white border border-zinc-200 rounded-2xl p-4 flex flex-col justify-between hover:border-zinc-900 hover:shadow-lg transition group"
-             data-category="metodologi"
-             data-title="Metodologi Penelitian Kualitatif dalam Sosial & Humaniora"
-             data-author="Dr. H. Abdurrahman, M.Pd."
-             data-isbn="978-623-8123-01-2"
-             data-price="Rp 95.000"
-             data-pages="320"
-             data-synopsis="Buku teks komprehensif mengupas tuntas rancangan riset kualitatif, teknik triangulasi data, dan analisis tematik untuk penelitian skripsi, tesis, dan disertasi.">
+        <!-- Book 1 (Navy Academic) -->
+        <div class="mb-card border border-zinc-200 rounded p-4 bg-white flex flex-col justify-between hover:border-zinc-400 transition"
+             data-cat="metodologi" data-q="metodologi penelitian kualitatif abdurrahman 9786238123012">
           <div>
-            <div class="w-full aspect-[3/4] bg-zinc-900 rounded-xl p-4 text-white flex flex-col justify-between shadow-xs relative overflow-hidden group-hover:scale-[1.02] transition">
-              <span class="text-[9px] font-mono text-blue-400">NALAR ACADEMY</span>
-              <div>
-                <h4 class="font-bold text-sm leading-snug">Metodologi Riset Kualitatif</h4>
-                <p class="text-[10px] text-zinc-400 mt-1">Sosial & Humaniora</p>
+            <a href="detail-buku.html?id=1" class="block aspect-[1/1.45] bg-[#1e3a5f] rounded-xs p-4 text-white relative book-spine overflow-hidden hover:opacity-95 transition">
+              <div class="h-full flex flex-col justify-between border border-white/20 p-2.5">
+                <span class="text-[8px] uppercase tracking-widest text-slate-300 font-mono">Buku Ajar</span>
+                <div class="text-xs font-bold leading-tight">Metodologi Penelitian Kualitatif</div>
+                <div class="border-t border-white/30 pt-1 text-[9px] text-slate-200">Dr. H. Abdurrahman</div>
               </div>
-              <div class="text-[9px] text-zinc-400 font-mono">Dr. H. Abdurrahman</div>
-            </div>
-            <div class="mt-4">
-              <span class="text-[10px] font-mono text-zinc-400">978-623-8123-01-2</span>
-              <h3 class="text-sm font-bold text-zinc-950 group-hover:text-blue-600 line-clamp-2 mt-1">
-                Metodologi Penelitian Kualitatif dalam Sosial & Humaniora
+            </a>
+            <div class="mt-3">
+              <span class="text-[10px] text-zinc-400 font-mono block">978-623-8123-01-2</span>
+              <h3 class="text-xs sm:text-sm font-bold text-zinc-950 mt-0.5 line-clamp-2">
+                <a href="detail-buku.html?id=1" class="hover:underline">Metodologi Penelitian Kualitatif dalam Sosial & Humaniora</a>
               </h3>
               <p class="text-xs text-zinc-500 mt-0.5">Dr. H. Abdurrahman, M.Pd.</p>
-              <div class="mt-3 text-sm font-extrabold text-zinc-950 font-mono">Rp 95.000</div>
+              <div class="mt-2 text-sm font-bold text-zinc-950 font-mono">Rp 95.000</div>
             </div>
           </div>
-          <div class="mt-4 pt-3 border-t border-zinc-100">
-            <a href="detail-buku.html" class="block w-full text-center py-2 text-xs font-bold rounded-lg bg-zinc-950 hover:bg-blue-600 text-white transition">
+          <div class="mt-3 pt-3 border-t border-zinc-100">
+            <a href="detail-buku.html?id=1" class="block w-full text-center py-2 text-xs font-bold rounded bg-zinc-900 hover:bg-zinc-800 text-white transition">
               Detail Buku &rarr;
             </a>
           </div>
         </div>
 
-        <!-- Book 2 -->
-        <div class="mbook-card bg-white border border-zinc-200 rounded-2xl p-4 flex flex-col justify-between hover:border-zinc-900 hover:shadow-lg transition group"
-             data-category="metodologi"
-             data-title="Filsafat Ilmu dan Etika Akademik: Menata Integritas Karya Ilmiah"
-             data-author="Prof. Dr. M. Syukri, M.Phil."
-             data-isbn="978-623-8123-02-9"
-             data-price="Rp 85.000"
-             data-pages="264"
-             data-synopsis="Kajian mendasar tentang epistemologi keilmuan, tata kelola integritas riset, dan kode etik sitasi untuk mencegah malpraktik publikasi ilmiah.">
+        <!-- Book 2 (Burgundy Academic) -->
+        <div class="mb-card border border-zinc-200 rounded p-4 bg-white flex flex-col justify-between hover:border-zinc-400 transition"
+             data-cat="metodologi" data-q="filsafat ilmu dan etika akademik syukri 9786238123029">
           <div>
-            <div class="w-full aspect-[3/4] bg-zinc-800 rounded-xl p-4 text-white flex flex-col justify-between shadow-xs relative overflow-hidden group-hover:scale-[1.02] transition">
-              <span class="text-[9px] font-mono text-amber-400">NALAR ACADEMY</span>
-              <div>
-                <h4 class="font-bold text-sm leading-snug">Filsafat Ilmu & Etika Riset</h4>
-                <p class="text-[10px] text-zinc-400 mt-1">Integritas Akademik</p>
+            <a href="detail-buku.html?id=2" class="block aspect-[1/1.45] bg-[#722f37] rounded-xs p-4 text-white relative book-spine overflow-hidden hover:opacity-95 transition">
+              <div class="h-full flex flex-col justify-between border border-amber-200/30 p-2.5">
+                <span class="text-[8px] uppercase tracking-widest text-amber-200 font-mono">Filsafat</span>
+                <div class="text-xs font-bold leading-tight">Filsafat Ilmu & Etika Riset</div>
+                <div class="border-t border-white/30 pt-1 text-[9px] text-rose-100">Prof. Dr. M. Syukri</div>
               </div>
-              <div class="text-[9px] text-zinc-400 font-mono">Prof. Dr. M. Syukri</div>
-            </div>
-            <div class="mt-4">
-              <span class="text-[10px] font-mono text-zinc-400">978-623-8123-02-9</span>
-              <h3 class="text-sm font-bold text-zinc-950 group-hover:text-blue-600 line-clamp-2 mt-1">
-                Filsafat Ilmu dan Etika Akademik: Menata Integritas Karya
+            </a>
+            <div class="mt-3">
+              <span class="text-[10px] text-zinc-400 font-mono block">978-623-8123-02-9</span>
+              <h3 class="text-xs sm:text-sm font-bold text-zinc-950 mt-0.5 line-clamp-2">
+                <a href="detail-buku.html?id=2" class="hover:underline">Filsafat Ilmu dan Etika Akademik: Menata Integritas Karya</a>
               </h3>
               <p class="text-xs text-zinc-500 mt-0.5">Prof. Dr. M. Syukri, M.Phil.</p>
-              <div class="mt-3 text-sm font-extrabold text-zinc-950 font-mono">Rp 85.000</div>
+              <div class="mt-2 text-sm font-bold text-zinc-950 font-mono">Rp 85.000</div>
             </div>
           </div>
-          <div class="mt-4 pt-3 border-t border-zinc-100">
-            <a href="detail-buku.html" class="block w-full text-center py-2 text-xs font-bold rounded-lg bg-zinc-950 hover:bg-blue-600 text-white transition">
+          <div class="mt-3 pt-3 border-t border-zinc-100">
+            <a href="detail-buku.html?id=2" class="block w-full text-center py-2 text-xs font-bold rounded bg-zinc-900 hover:bg-zinc-800 text-white transition">
               Detail Buku &rarr;
             </a>
           </div>
         </div>
 
-        <!-- Book 3 -->
-        <div class="mbook-card bg-white border border-zinc-200 rounded-2xl p-4 flex flex-col justify-between hover:border-zinc-900 hover:shadow-lg transition group"
-             data-category="pendidikan"
-             data-title="Desain Instruksional Berbasis OBE di Perguruan Tinggi"
-             data-author="Dr. Rina Fitriani, M.Ed."
-             data-isbn="978-623-8123-03-6"
-             data-price="Rp 110.000"
-             data-pages="380"
-             data-synopsis="Panduan operasional merancang silabus, rubrik penilaian autentik, dan rencana pembelajaran semester (RPS) berstandar akreditasi internasional berbasis OBE.">
+        <!-- Book 3 (Forest Green) -->
+        <div class="mb-card border border-zinc-200 rounded p-4 bg-white flex flex-col justify-between hover:border-zinc-400 transition"
+             data-cat="pendidikan" data-q="desain instruksional modern berbasis obe rina fitriani 9786238123036">
           <div>
-            <div class="w-full aspect-[3/4] bg-emerald-950 rounded-xl p-4 text-white flex flex-col justify-between shadow-xs relative overflow-hidden group-hover:scale-[1.02] transition">
-              <span class="text-[9px] font-mono text-emerald-400">NALAR ACADEMY</span>
-              <div>
-                <h4 class="font-bold text-sm leading-snug">Desain Instruksional OBE</h4>
-                <p class="text-[10px] text-zinc-400 mt-1">Kurikulum Pendidikan Tinggi</p>
+            <a href="detail-buku.html?id=3" class="block aspect-[1/1.45] bg-[#1b4332] rounded-xs p-4 text-white relative book-spine overflow-hidden hover:opacity-95 transition">
+              <div class="h-full flex flex-col justify-between border border-emerald-200/30 p-2.5">
+                <span class="text-[8px] uppercase tracking-widest text-emerald-300 font-mono">Pendidikan</span>
+                <div class="text-xs font-bold leading-tight">Desain Instruksional OBE</div>
+                <div class="border-t border-white/30 pt-1 text-[9px] text-emerald-100">Dr. Rina Fitriani</div>
               </div>
-              <div class="text-[9px] text-zinc-400 font-mono">Dr. Rina Fitriani</div>
-            </div>
-            <div class="mt-4">
-              <span class="text-[10px] font-mono text-zinc-400">978-623-8123-03-6</span>
-              <h3 class="text-sm font-bold text-zinc-950 group-hover:text-blue-600 line-clamp-2 mt-1">
-                Desain Instruksional Berbasis OBE di Perguruan Tinggi
+            </a>
+            <div class="mt-3">
+              <span class="text-[10px] text-zinc-400 font-mono block">978-623-8123-03-6</span>
+              <h3 class="text-xs sm:text-sm font-bold text-zinc-950 mt-0.5 line-clamp-2">
+                <a href="detail-buku.html?id=3" class="hover:underline">Desain Instruksional Modern Berbasis OBE Perguruan Tinggi</a>
               </h3>
               <p class="text-xs text-zinc-500 mt-0.5">Dr. Rina Fitriani, M.Ed.</p>
-              <div class="mt-3 text-sm font-extrabold text-zinc-950 font-mono">Rp 110.000</div>
+              <div class="mt-2 text-sm font-bold text-zinc-950 font-mono">Rp 110.000</div>
             </div>
           </div>
-          <div class="mt-4 pt-3 border-t border-zinc-100">
-            <a href="detail-buku.html" class="block w-full text-center py-2 text-xs font-bold rounded-lg bg-zinc-950 hover:bg-blue-600 text-white transition">
+          <div class="mt-3 pt-3 border-t border-zinc-100">
+            <a href="detail-buku.html?id=3" class="block w-full text-center py-2 text-xs font-bold rounded bg-zinc-900 hover:bg-zinc-800 text-white transition">
               Detail Buku &rarr;
             </a>
           </div>
         </div>
 
-        <!-- Book 4 -->
-        <div class="mbook-card bg-white border border-zinc-200 rounded-2xl p-4 flex flex-col justify-between hover:border-zinc-900 hover:shadow-lg transition group"
-             data-category="sains"
-             data-title="Kecerdasan Buatan & Transformasi Pembelajaran Digital"
-             data-author="Hendra Wijaya & Dr. Gunawan"
-             data-isbn="978-623-8123-04-3"
-             data-price="Rp 125.000"
-             data-pages="340"
-             data-synopsis="Mengupas implementasi Large Language Models, Generative AI, dan sistem evaluasi otomatis dalam ekosistem kampus modern.">
+        <!-- Book 4 (Dark Slate) -->
+        <div class="mb-card border border-zinc-200 rounded p-4 bg-white flex flex-col justify-between hover:border-zinc-400 transition"
+             data-cat="sains" data-q="kecerdasan buatan transformasi digital hendra wijaya 9786238123043">
           <div>
-            <div class="w-full aspect-[3/4] bg-blue-950 rounded-xl p-4 text-white flex flex-col justify-between shadow-xs relative overflow-hidden group-hover:scale-[1.02] transition">
-              <span class="text-[9px] font-mono text-cyan-400">NALAR ACADEMY</span>
-              <div>
-                <h4 class="font-bold text-sm leading-snug">AI & Transformasi Digital</h4>
-                <p class="text-[10px] text-zinc-400 mt-1">Pembelajaran Kampus Modern</p>
+            <a href="detail-buku.html?id=4" class="block aspect-[1/1.45] bg-[#2b2d42] rounded-xs p-4 text-white relative book-spine overflow-hidden hover:opacity-95 transition">
+              <div class="h-full flex flex-col justify-between border border-white/20 p-2.5">
+                <span class="text-[8px] uppercase tracking-widest text-cyan-300 font-mono">Teknologi</span>
+                <div class="text-xs font-bold leading-tight">AI & Transformasi Digital</div>
+                <div class="border-t border-white/30 pt-1 text-[9px] text-slate-200">Hendra W. & Tim</div>
               </div>
-              <div class="text-[9px] text-zinc-400 font-mono">Hendra W. & Tim</div>
-            </div>
-            <div class="mt-4">
-              <span class="text-[10px] font-mono text-zinc-400">978-623-8123-04-3</span>
-              <h3 class="text-sm font-bold text-zinc-950 group-hover:text-blue-600 line-clamp-2 mt-1">
-                Kecerdasan Buatan & Transformasi Pembelajaran Digital
+            </a>
+            <div class="mt-3">
+              <span class="text-[10px] text-zinc-400 font-mono block">978-623-8123-04-3</span>
+              <h3 class="text-xs sm:text-sm font-bold text-zinc-950 mt-0.5 line-clamp-2">
+                <a href="detail-buku.html?id=4" class="hover:underline">Kecerdasan Buatan & Transformasi Pembelajaran Digital</a>
               </h3>
               <p class="text-xs text-zinc-500 mt-0.5">Hendra Wijaya & Dr. Gunawan</p>
-              <div class="mt-3 text-sm font-extrabold text-zinc-950 font-mono">Rp 125.000</div>
+              <div class="mt-2 text-sm font-bold text-zinc-950 font-mono">Rp 125.000</div>
             </div>
           </div>
-          <div class="mt-4 pt-3 border-t border-zinc-100">
-            <a href="detail-buku.html" class="block w-full text-center py-2 text-xs font-bold rounded-lg bg-zinc-950 hover:bg-blue-600 text-white transition">
+          <div class="mt-3 pt-3 border-t border-zinc-100">
+            <a href="detail-buku.html?id=4" class="block w-full text-center py-2 text-xs font-bold rounded bg-zinc-900 hover:bg-zinc-800 text-white transition">
               Detail Buku &rarr;
             </a>
           </div>
@@ -269,103 +226,44 @@
     </div>
   </main>
 
-  <!-- Modern Quick View Modal -->
-  <div id="mModal" class="fixed inset-0 bg-zinc-950/70 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-xl w-full p-6 sm:p-8 shadow-2xl relative">
-      <button id="closeMModal" class="absolute top-4 right-4 text-zinc-400 hover:text-zinc-950 p-1">
-        <i data-lucide="x" class="w-6 h-6"></i>
-      </button>
-
-      <span id="mIsbn" class="text-xs font-mono text-blue-600 font-bold">ISBN: -</span>
-      <h2 id="mTitle" class="text-xl font-extrabold text-zinc-950 tracking-tight mt-1">Judul Buku</h2>
-      <p id="mAuthor" class="text-xs text-zinc-500 mt-1">Penulis</p>
-
-      <div class="mt-4 p-4 rounded-xl bg-zinc-50 border border-zinc-100 text-xs text-zinc-600 leading-relaxed font-normal" id="mSynopsis">
-        Sinopsis...
-      </div>
-
-      <div class="mt-6 flex items-center justify-between">
-        <div>
-          <span class="text-[10px] font-mono text-zinc-400 uppercase">Harga Katalog</span>
-          <div id="mPrice" class="text-xl font-extrabold font-mono text-zinc-950">Rp 0</div>
-        </div>
-        <a id="mWaLink" href="#" target="_blank" class="px-5 py-2.5 rounded-xl bg-zinc-950 hover:bg-blue-600 text-white text-xs font-bold transition flex items-center gap-2">
-          <i data-lucide="message-square" class="w-4 h-4"></i> Order via WhatsApp
-        </a>
-      </div>
-    </div>
-  </div>
-
   <footer class="bg-white border-t border-zinc-200 py-8 text-center text-xs text-zinc-500">
-    <p>&copy; 2026 Nalar Academy Publishing. Nalar Bookstore. Desain Alternatif 2 (Modern Grid).</p>
+    <p>&copy; 2026 Nalar Academy Publishing &bull; Modern Grid Bookstore &bull; Anggota IKAPI</p>
   </footer>
 
   <script>
     lucide.createIcons();
 
-    const searchInput = document.getElementById('searchModernBook');
-    const tabs = document.querySelectorAll('.btab');
-    const cards = document.querySelectorAll('.mbook-card');
+    const searchInput = document.getElementById('modernSearchInput');
+    const buttons = document.querySelectorAll('.m-cat-btn');
+    const cards = document.querySelectorAll('.mb-card');
 
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        tabs.forEach(t => {
-          t.classList.remove('bg-zinc-950', 'text-white', 'active');
-          t.classList.add('bg-white', 'border', 'border-zinc-200', 'text-zinc-700');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => {
+          b.classList.remove('bg-zinc-950', 'text-white', 'active');
+          b.classList.add('border', 'border-zinc-300', 'text-zinc-700');
         });
-        tab.classList.add('bg-zinc-950', 'text-white', 'active');
-        tab.classList.remove('bg-white', 'border', 'border-zinc-200', 'text-zinc-700');
+        btn.classList.add('bg-zinc-950', 'text-white', 'active');
+        btn.classList.remove('border', 'border-zinc-300', 'text-zinc-700');
 
-        filter(tab.getAttribute('data-c'), searchInput.value.toLowerCase());
+        filter(btn.getAttribute('data-cat'), searchInput.value.toLowerCase());
       });
     });
 
     searchInput?.addEventListener('input', (e) => {
-      const activeC = document.querySelector('.btab.active')?.getAttribute('data-c') || 'all';
-      filter(activeC, e.target.value.toLowerCase());
+      const activeCat = document.querySelector('.m-cat-btn.active')?.getAttribute('data-cat') || 'all';
+      filter(activeCat, e.target.value.toLowerCase());
     });
 
     function filter(cat, q) {
       cards.forEach(card => {
-        const c = card.getAttribute('data-category');
-        const text = (card.getAttribute('data-title') + ' ' + card.getAttribute('data-author')).toLowerCase();
-        const matchesC = (cat === 'all' || c === cat);
-        const matchesQ = !q || text.includes(q);
-        card.style.display = (matchesC && matchesQ) ? 'flex' : 'none';
+        const itemCat = card.getAttribute('data-cat');
+        const text = card.getAttribute('data-q') || '';
+        const matchCat = (cat === 'all' || itemCat === cat);
+        const matchQ = !q || text.includes(q);
+        card.style.display = (matchCat && matchQ) ? 'flex' : 'none';
       });
     }
-
-    // Modal
-    const modal = document.getElementById('mModal');
-    const closeBtn = document.getElementById('closeMModal');
-    const openBtns = document.querySelectorAll('.open-modal-btn');
-
-    openBtns.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        const card = e.target.closest('.mbook-card');
-        const title = card.getAttribute('data-title');
-        const author = card.getAttribute('data-author');
-        const isbn = card.getAttribute('data-isbn');
-        const price = card.getAttribute('data-price');
-        const synopsis = card.getAttribute('data-synopsis');
-
-        document.getElementById('mTitle').innerText = title;
-        document.getElementById('mAuthor').innerText = author;
-        document.getElementById('mIsbn').innerText = 'ISBN: ' + isbn;
-        document.getElementById('mPrice').innerText = price;
-        document.getElementById('mSynopsis').innerText = synopsis;
-
-        const waText = encodeURIComponent(`Halo Nalar Academy, saya ingin memesan buku: "${title}" (ISBN: ${isbn}) seharga ${price}.`);
-        document.getElementById('mWaLink').href = `https://wa.me/6281234567890?text=${waText}`;
-
-        modal.classList.remove('hidden');
-      });
-    });
-
-    closeBtn?.addEventListener('click', () => modal.classList.add('hidden'));
-    modal?.addEventListener('click', (e) => {
-      if (e.target === modal) modal.classList.add('hidden');
-    });
   </script>
 </body>
 </html>
