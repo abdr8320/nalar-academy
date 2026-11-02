@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Buku: Metodologi Penelitian Kualitatif - Nalar Academy Publishing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Merriweather', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen flex flex-col bg-white text-slate-800 antialiased selection:bg-emerald-100 selection:text-emerald-900">
+
+  <!-- ================= PREVIEW SWITCHER BAR ================= -->
+  <div class="bg-slate-900 text-white text-xs py-2 px-4 border-b border-slate-800 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center space-x-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-semibold text-slate-200">Mode Preview Desain:</span>
+        <span class="bg-emerald-950 text-emerald-300 px-2 py-0.5 rounded font-mono font-medium border border-emerald-800">Alternatif 1: Emerald Style &bull; Halaman Detail Buku</span>
+      </div>
+      <div class="flex items-center space-x-1 sm:space-x-3 text-xs">
+        <a href="detail-buku.html" class="px-2 py-1 rounded bg-white text-slate-900 font-medium hover:bg-slate-100">Alt 1 (Emerald)</a>
+        <a href="../alt2-modern/detail-buku.html" class="px-2 py-1 rounded text-slate-300 hover:text-white hover:bg-slate-800 transition">Alt 2 (Modern Grid)</a>
+        <a href="../alt3-press/detail-buku.html" class="px-2 py-1 rounded text-slate-300 hover:text-white hover:bg-slate-800 transition">Alt 3 (University Press)</a>
+        <span class="text-slate-600">|</span>
+        <a href="../index.html" class="px-2.5 py-1 rounded bg-slate-800 text-amber-300 hover:bg-slate-700 font-medium flex items-center gap-1">
+          <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i> Hub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="border-b border-slate-200 bg-white sticky top-[33px] z-40 bg-opacity-95 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-lg bg-slate-900 text-white flex items-center justify-center font-serif font-bold text-xl">
+            NA
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-xl font-bold tracking-tight text-slate-900">NALAR ACADEMY</span>
+            <span class="text-[11px] font-medium tracking-widest text-slate-500 uppercase -mt-0.5">Publishing & Bookstore</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+          <a href="index.html" class="text-slate-600 hover:text-emerald-700 py-6">Beranda</a>
+          <!-- Menu Jurnal: di production langsung redirect ke OJS, pada prototipe tidak ada action -->
+          <a href="javascript:void(0)" class="text-slate-600 hover:text-emerald-700 py-6 flex items-center gap-1.5 cursor-pointer">
+            Jurnal (OJS)
+            <span class="bg-emerald-50 text-emerald-700 text-[10px] px-1.5 py-0.5 rounded font-semibold border border-emerald-200">Open Access</span>
+          </a>
+          <a href="bookstore.html" class="text-emerald-700 border-b-2 border-emerald-700 py-6 font-semibold">
+            Bookstore
+          </a>
+          <a href="index.html#tentang" class="text-slate-600 hover:text-emerald-700 py-6">Tentang Kami</a>
+          <a href="index.html#kontak" class="text-slate-600 hover:text-emerald-700 py-6">Kontak</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center space-x-3">
+          <a href="bookstore.html" class="px-4 py-2 text-xs font-semibold rounded-md border border-slate-300 text-slate-700 hover:bg-slate-50 transition flex items-center gap-1.5">
+            <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Kembali ke Katalog
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb (Emerald Editorial Style) -->
+  <div class="border-b border-slate-100 bg-slate-50/60 text-xs text-slate-500 py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2">
+      <a href="index.html" class="hover:text-emerald-700 transition">Beranda</a>
+      <span>/</span>
+      <a href="bookstore.html" class="hover:text-emerald-700 transition">Bookstore</a>
+      <span>/</span>
+      <a href="bookstore.html?cat=metodologi" class="hover:text-emerald-700 transition">Metodologi & Riset</a>
+      <span>/</span>
+      <span class="text-slate-800 font-medium truncate max-w-md" id="breadcrumbTitle">Metodologi Penelitian Kualitatif dalam Sosial & Humaniora</span>
+    </div>
+  </div>
+
+  <!-- Book Main Detail Section -->
+  <main class="py-12 bg-white flex-grow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left: Book Cover & Quick Spec Column (5 cols) -->
+        <div class="lg:col-span-4 sticky top-28 space-y-6">
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <!-- Book Cover Mockup (Emerald 3D/Elevated Style) -->
+            <div class="w-full aspect-[3/4] bg-slate-900 rounded-lg p-6 text-white flex flex-col justify-between shadow-xl relative overflow-hidden border-l-8 border-slate-800">
+              <div class="border-t-2 border-emerald-400 pt-3">
+                <span class="text-[10px] uppercase tracking-widest text-emerald-300 font-mono font-medium">Buku Ajar Akademik</span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="font-serif text-xl font-bold leading-tight" id="coverTitle">
+                  Metodologi Penelitian Kualitatif
+                </h3>
+                <p class="text-xs text-slate-300 font-light" id="coverSubtitle">
+                  dalam Ilmu Sosial & Humaniora
+                </p>
+              </div>
+              <div class="border-t border-slate-700 pt-3 flex justify-between items-end text-[11px] text-slate-300 font-mono">
+                <span id="coverAuthor">Dr. H. Abdurrahman, M.Pd.</span>
+                <span class="text-emerald-400 font-bold">NALAR</span>
+              </div>
+            </div>
+
+            <!-- Badges -->
+            <div class="mt-6 flex flex-wrap gap-2 justify-center">
+              <span class="px-2.5 py-1 rounded text-xs font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200 flex items-center gap-1">
+                <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> Stok Tersedia (Ready)
+              </span>
+              <span class="px-2.5 py-1 rounded text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+                Format: Cetak Paperback
+              </span>
+              <span class="px-2.5 py-1 rounded text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-200">
+                E-Book Tersedia
+              </span>
+            </div>
+          </div>
+
+          <!-- Publisher Trust Box -->
+          <div class="p-4 rounded-lg border border-slate-200 bg-white text-xs text-slate-600 space-y-2.5">
+            <div class="flex items-center gap-2 font-semibold text-slate-800">
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i>
+              <span>Jaminan Kualitas & Legalitas</span>
+            </div>
+            <p class="text-[11px] text-slate-500 leading-relaxed">
+              Buku terbitan resmi ber-ISBN dari Perpustakaan Nasional RI. Dicetak menggunakan kertas ramah mata (bookpaper premium 72gr) dengan jilid lem panas presisi.
+            </p>
+            <div class="pt-2 border-t border-slate-100 text-[11px] text-slate-500 flex items-center justify-between">
+              <span>Keanggotaan:</span>
+              <strong class="text-slate-700">IKAPI No. 492/JBA</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Book Full Information & Buying Box (8 cols) -->
+        <div class="lg:col-span-8 space-y-8">
+          
+          <!-- Title & Author Block -->
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-xs font-mono font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200" id="detailIsbnBadge">
+                ISBN: 978-623-8123-01-2
+              </span>
+              <span class="text-xs text-slate-400 font-mono">&bull;</span>
+              <span class="text-xs text-slate-500">Terbit: Maret 2026</span>
+              <span class="text-xs text-slate-400 font-mono">&bull;</span>
+              <span class="text-xs text-slate-500">Cetakan ke-1</span>
+            </div>
+
+            <h1 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 leading-tight" id="detailTitle">
+              Metodologi Penelitian Kualitatif dalam Sosial & Humaniora
+            </h1>
+            <p class="mt-2 text-base text-slate-600 font-light leading-relaxed" id="detailSubtitle">
+              Panduan Praktis Desain Riset, Instrumen Pengumpulan Data, dan Teknik Analisis Tematik Kontemporer.
+            </p>
+
+            <div class="mt-4 flex flex-wrap items-center gap-4 text-sm text-slate-700">
+              <div>
+                <span class="text-slate-400 text-xs">Penulis:</span>
+                <strong class="font-medium ml-1" id="detailAuthor">Dr. H. Abdurrahman, M.Pd. & Tim Ahli</strong>
+              </div>
+              <span class="text-slate-300">|</span>
+              <div>
+                <span class="text-slate-400 text-xs">Penerbit:</span>
+                <span class="font-medium text-emerald-700 ml-1">Nalar Academy Publishing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Purchase Card (Emerald White Highlighting) -->
+          <div class="p-6 rounded-xl border-2 border-emerald-600/30 bg-emerald-50/30 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+            <div>
+              <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">Harga Resmi Buku Cetak:</span>
+              <div class="flex items-baseline gap-3 mt-1">
+                <span class="text-3xl font-serif font-bold text-slate-900" id="detailPrice">Rp 95.000</span>
+                <span class="text-xs text-slate-400 line-through">Rp 115.000</span>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">Hemat 17%</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-1">
+                Tersedia diskon khusus pengadaan perpustakaan kampus & kelas mahasiswa (min. 10 eks).
+              </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+              <a id="btnWaOrder" href="https://wa.me/6281234567890?text=Halo%20Nalar%20Academy,%20saya%20ingin%20memesan%20buku%20Metodologi%20Penelitian%20Kualitatif" target="_blank"
+                 class="px-6 py-3.5 bg-emerald-700 hover:bg-emerald-800 text-white rounded-lg font-semibold text-sm transition shadow-sm flex items-center justify-center gap-2">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Pesan Cepat via WhatsApp</span>
+              </a>
+              <button onclick="copyCitation()" class="px-4 py-3 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 rounded-lg font-medium text-xs transition flex items-center justify-center gap-1.5" title="Salin Sitasi APA">
+                <i data-lucide="quote" class="w-4 h-4 text-emerald-600"></i>
+                <span>Sitasi Buku</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Detailed Specs Table Strip -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-lg bg-slate-50 border border-slate-200 text-xs">
+            <div>
+              <div class="text-slate-400 uppercase font-medium text-[10px]">ISBN Resmi</div>
+              <div class="font-mono font-bold text-slate-800 mt-0.5" id="specIsbn">978-623-8123-01-2</div>
+            </div>
+            <div>
+              <div class="text-slate-400 uppercase font-medium text-[10px]">Tebal Halaman</div>
+              <div class="font-bold text-slate-800 mt-0.5" id="specPages">320 Halaman</div>
+            </div>
+            <div>
+              <div class="text-slate-400 uppercase font-medium text-[10px]">Ukuran Buku</div>
+              <div class="font-bold text-slate-800 mt-0.5">15.5 x 23 cm (UNESCO)</div>
+            </div>
+            <div>
+              <div class="text-slate-400 uppercase font-medium text-[10px]">Bahan Kertas</div>
+              <div class="font-bold text-slate-800 mt-0.5">Bookpaper 72 gr</div>
+            </div>
+          </div>
+
+          <!-- Content Tabs (Emerald Academic Navigation) -->
+          <div class="border-b border-slate-200">
+            <nav class="flex space-x-8 text-sm font-medium" id="tabNav">
+              <button onclick="switchTab('tab-sinopsis', this)" class="tab-btn pb-3 border-b-2 border-emerald-700 text-emerald-700 font-semibold">
+                Sinopsis Buku
+              </button>
+              <button onclick="switchTab('tab-daftar-isi', this)" class="tab-btn pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 hover:border-slate-300">
+                Daftar Isi Lengkap
+              </button>
+              <button onclick="switchTab('tab-penulis', this)" class="tab-btn pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 hover:border-slate-300">
+                Tentang Penulis
+              </button>
+              <button onclick="switchTab('tab-sitasi', this)" class="tab-btn pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 hover:border-slate-300">
+                Sitasi & Metadata
+              </button>
+            </nav>
+          </div>
+
+          <!-- Tab 1: Sinopsis -->
+          <div id="tab-sinopsis" class="tab-content space-y-4 text-sm text-slate-700 leading-relaxed font-light">
+            <h3 class="font-serif text-lg font-bold text-slate-900">Deskripsi Karya</h3>
+            <p id="synopsisPara1">
+              Buku <em>Metodologi Penelitian Kualitatif dalam Ilmu Sosial & Humaniora</em> hadir sebagai panduan epistemologis dan praktis bagi para akademisi, dosen, dan mahasiswa pascasarjana dalam merancang riset kualitatif yang berintegritas tinggi. Penulisan buku ini dilatarbelakangi oleh pentingnya ketelitian metodologis dalam menjawab fenomena sosial yang kian kompleks di era digital.
+            </p>
+            <p id="synopsisPara2">
+              Di dalamnya dibahas secara komprehensif mulai dari pergeseran paradigma positivistik menuju interpretif dan kritis, formulasi rumusan masalah yang tajam, teknik penentuan informan purposif, triangulasi sumber data, hingga prosedur analisis tematik berbantuan perangkat lunak analisis kualitatif modern.
+            </p>
+            <div class="p-4 rounded-lg bg-emerald-50/50 border border-emerald-100 text-xs text-slate-700 space-y-1">
+              <div class="font-bold text-emerald-900">Keunggulan Buku Ini:</div>
+              <ul class="list-disc list-inside space-y-1 pl-1 text-slate-600">
+                <li>Dilengkapi contoh konkret proposal penelitian tesis & disertasi yang lolos hibah nasional.</li>
+                <li>Panduan langkah demi langkah teknik wawancara mendalam (in-depth interview) dan observasi partisipatif.</li>
+                <li>Strategi uji keabsahan data (credibility, transferability, dependability, dan confirmability).</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tab 2: Daftar Isi -->
+          <div id="tab-daftar-isi" class="tab-content hidden space-y-3 text-xs sm:text-sm text-slate-700">
+            <h3 class="font-serif text-lg font-bold text-slate-900 mb-3">Struktur Bab & Isi Buku</h3>
+            <div class="border border-slate-200 rounded-lg divide-y divide-slate-100">
+              <div class="p-3 bg-slate-50 font-semibold text-slate-800">Bagian I: Landasan Filosofis & Paradigma Riset</div>
+              <div class="p-3 pl-6">Bab 1: Hakikat Pengetahuan dan Paradigma Penelitian Kualitatif (hlm. 1-28)</div>
+              <div class="p-3 pl-6">Bab 2: Merumuskan Masalah dan Kebaruan Penelitian (Novelty) (hlm. 29-54)</div>
+              
+              <div class="p-3 bg-slate-50 font-semibold text-slate-800">Bagian II: Ragam Pendekatan Kualitatif</div>
+              <div class="p-3 pl-6">Bab 3: Pendekatan Fenomenologi dan Hermeneutika (hlm. 55-92)</div>
+              <div class="p-3 pl-6">Bab 4: Studi Kasus Tunggal dan Multikasus (hlm. 93-138)</div>
+              <div class="p-3 pl-6">Bab 5: Etnografi Kritis dan Netnografi Digital (hlm. 139-178)</div>
+              <div class="p-3 pl-6">Bab 6: Grounded Theory: Mengembangkan Teori dari Data (hlm. 179-220)</div>
+
+              <div class="p-3 bg-slate-50 font-semibold text-slate-800">Bagian III: Analisis Data & Penulisan Laporan</div>
+              <div class="p-3 pl-6">Bab 7: Teknik Pengkodean dan Analisis Tematik (hlm. 221-264)</div>
+              <div class="p-3 pl-6">Bab 8: Triangulasi dan Standar Validitas Kualitatif (hlm. 265-294)</div>
+              <div class="p-3 pl-6">Bab 9: Menulis Naskah untuk Publikasi di Jurnal Bereputasi (hlm. 295-320)</div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Penulis -->
+          <div id="tab-penulis" class="tab-content hidden space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
+            <h3 class="font-serif text-lg font-bold text-slate-900">Biografi Penulis</h3>
+            <div class="flex items-start gap-4 p-4 rounded-lg bg-slate-50 border border-slate-200">
+              <div class="w-16 h-16 rounded-full bg-slate-900 text-white flex items-center justify-center font-serif text-xl font-bold flex-shrink-0">
+                AR
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base" id="authorBioName">Dr. H. Abdurrahman, M.Pd.</h4>
+                <p class="text-xs text-emerald-700 font-medium mt-0.5">Dosen Senior & Peneliti Metodologi Pendidikan</p>
+                <p class="text-xs text-slate-600 mt-2 font-light leading-relaxed">
+                  Menyelesaikan studi doktoral di bidang Penelitian dan Evaluasi Pendidikan. Aktif sebagai reviewer nasional jurnal SINTA dan pengelola konsorsium penerbitan ilmiah. Telah menulis lebih dari 15 buku ajar dan puluhan artikel pada jurnal terindeks internasional.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 4: Sitasi -->
+          <div id="tab-sitasi" class="tab-content hidden space-y-4 text-xs sm:text-sm text-slate-700">
+            <h3 class="font-serif text-lg font-bold text-slate-900">Format Sitasi Karya Ilmiah</h3>
+            <p class="text-xs text-slate-500 font-light">Gunakan format sitasi berikut apabila Anda mengutip atau merujuk buku ini dalam skripsi, tesis, disertasi, atau artikel jurnal:</p>
+            
+            <div class="space-y-3">
+              <div class="p-3 rounded bg-slate-50 border border-slate-200 font-mono text-xs">
+                <div class="text-[10px] text-slate-400 font-sans uppercase font-bold mb-1">APA Style (7th Edition):</div>
+                <div id="citationApaText" class="text-slate-800">
+                  Abdurrahman. (2026). <em>Metodologi Penelitian Kualitatif dalam Sosial & Humaniora</em> (Cet. 1). Jakarta: Nalar Academy Publishing.
+                </div>
+              </div>
+
+              <div class="p-3 rounded bg-slate-50 border border-slate-200 font-mono text-xs">
+                <div class="text-[10px] text-slate-400 font-sans uppercase font-bold mb-1">Chicago / Turabian:</div>
+                <div class="text-slate-800">
+                  Abdurrahman. <em>Metodologi Penelitian Kualitatif dalam Sosial & Humaniora</em>. Jakarta: Nalar Academy Publishing, 2026.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Related Books Section -->
+      <section class="mt-20 pt-12 border-t border-slate-200">
+        <div class="flex justify-between items-end mb-8">
+          <div>
+            <span class="text-emerald-700 font-semibold text-xs tracking-wider uppercase">Rekomendasi Terbitan</span>
+            <h2 class="font-serif text-2xl font-bold text-slate-900 mt-1">Buku Terkait dalam Bidang Serumpun</h2>
+          </div>
+          <a href="bookstore.html" class="text-xs font-semibold text-emerald-700 hover:underline flex items-center gap-1">
+            Lihat Semua Koleksi &rarr;
+          </a>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- Related 1 -->
+          <div class="border border-slate-200 rounded-lg p-4 bg-white hover:shadow-md transition">
+            <div class="aspect-[3/4] bg-slate-800 rounded p-4 text-white flex flex-col justify-between text-xs">
+              <span class="text-[9px] font-mono text-amber-300">Filsafat & Riset</span>
+              <div class="font-serif font-bold text-xs">Filsafat Ilmu & Etika Akademik</div>
+              <span class="text-[9px] text-slate-400">Prof. Dr. M. Syukri</span>
+            </div>
+            <h4 class="font-serif text-xs font-bold text-slate-900 mt-3 line-clamp-2">Filsafat Ilmu dan Etika Akademik</h4>
+            <div class="text-xs font-bold text-slate-900 mt-1">Rp 85.000</div>
+            <a href="detail-buku.html?id=2" class="mt-3 block text-center py-1.5 bg-slate-100 hover:bg-emerald-700 hover:text-white rounded text-[11px] font-semibold transition">
+              Lihat Detail
+            </a>
+          </div>
+
+          <!-- Related 2 -->
+          <div class="border border-slate-200 rounded-lg p-4 bg-white hover:shadow-md transition">
+            <div class="aspect-[3/4] bg-emerald-950 rounded p-4 text-white flex flex-col justify-between text-xs">
+              <span class="text-[9px] font-mono text-emerald-300">Pendidikan</span>
+              <div class="font-serif font-bold text-xs">Desain Instruksional OBE</div>
+              <span class="text-[9px] text-slate-400">Dr. Rina Fitriani</span>
+            </div>
+            <h4 class="font-serif text-xs font-bold text-slate-900 mt-3 line-clamp-2">Desain Instruksional Berbasis OBE</h4>
+            <div class="text-xs font-bold text-slate-900 mt-1">Rp 110.000</div>
+            <a href="detail-buku.html?id=3" class="mt-3 block text-center py-1.5 bg-slate-100 hover:bg-emerald-700 hover:text-white rounded text-[11px] font-semibold transition">
+              Lihat Detail
+            </a>
+          </div>
+
+          <!-- Related 3 -->
+          <div class="border border-slate-200 rounded-lg p-4 bg-white hover:shadow-md transition">
+            <div class="aspect-[3/4] bg-indigo-950 rounded p-4 text-white flex flex-col justify-between text-xs">
+              <span class="text-[9px] font-mono text-cyan-300">Teknologi</span>
+              <div class="font-serif font-bold text-xs">AI & Pembelajaran Digital</div>
+              <span class="text-[9px] text-slate-400">Hendra Wijaya & Tim</span>
+            </div>
+            <h4 class="font-serif text-xs font-bold text-slate-900 mt-3 line-clamp-2">Kecerdasan Buatan & Transformasi Digital</h4>
+            <div class="text-xs font-bold text-slate-900 mt-1">Rp 125.000</div>
+            <a href="detail-buku.html?id=4" class="mt-3 block text-center py-1.5 bg-slate-100 hover:bg-emerald-700 hover:text-white rounded text-[11px] font-semibold transition">
+              Lihat Detail
+            </a>
+          </div>
+
+          <!-- Related 4 -->
+          <div class="border border-slate-200 rounded-lg p-4 bg-white hover:shadow-md transition">
+            <div class="aspect-[3/4] bg-teal-950 rounded p-4 text-white flex flex-col justify-between text-xs">
+              <span class="text-[9px] font-mono text-teal-300">Kebijakan</span>
+              <div class="font-serif font-bold text-xs">Model Kebijakan Publik</div>
+              <span class="text-[9px] text-slate-400">Dr. Dian Prasetyo</span>
+            </div>
+            <h4 class="font-serif text-xs font-bold text-slate-900 mt-3 line-clamp-2">Model Kebijakan Publik & Tata Kelola</h4>
+            <div class="text-xs font-bold text-slate-900 mt-1">Rp 88.000</div>
+            <a href="detail-buku.html?id=5" class="mt-3 block text-center py-1.5 bg-slate-100 hover:bg-emerald-700 hover:text-white rounded text-[11px] font-semibold transition">
+              Lihat Detail
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-10 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-2">
+      <div class="font-serif text-sm font-bold text-slate-900">NALAR ACADEMY PUBLISHING</div>
+      <p>Penerbit Buku Ilmiah Anggota IKAPI & Terdaftar di Perpustakaan Nasional RI.</p>
+      <p class="text-slate-400 text-[11px]">&copy; 2026 Nalar Academy. Alternatif 1: Emerald Style Detail Buku.</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    // Tab switching
+    function switchTab(tabId, el) {
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('border-emerald-700', 'text-emerald-700', 'font-semibold');
+        btn.classList.add('border-transparent', 'text-slate-500');
+      });
+      el.classList.add('border-emerald-700', 'text-emerald-700', 'font-semibold');
+      el.classList.remove('border-transparent', 'text-slate-500');
+    }
+
+    // Copy citation
+    function copyCitation() {
+      const text = document.getElementById('citationApaText').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Sitasi format APA berhasil disalin ke clipboard:\n\n' + text);
+      });
+    }
+  </script>
+</body>
+</html>

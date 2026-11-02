@@ -118,6 +118,10 @@
                   <span class="font-medium">2. Katalog Bookstore (Pesan WA)</span>
                   <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-emerald-700"></i>
                 </a>
+                <a href="alt1-emerald/detail-buku.html" class="flex items-center justify-between p-2 rounded bg-emerald-50/60 hover:bg-emerald-100 border border-emerald-200 text-emerald-900 transition">
+                  <span class="font-medium">3. Detail Buku Monograf (Baru)</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-emerald-700"></i>
+                </a>
                 <div class="flex items-center justify-between p-2 rounded bg-slate-100 border border-slate-200 text-slate-500">
                   <span class="font-medium flex items-center gap-1.5"><i data-lucide="external-link" class="w-3 h-3 text-slate-400"></i> Menu Jurnal &rarr; Direct Link ke OJS</span>
                   <span class="text-[10px] bg-slate-200 text-slate-600 px-1.5 py-0.5 rounded font-mono">No Action</span>
@@ -182,6 +186,10 @@
                 <a href="alt2-modern/bookstore.html" class="flex items-center justify-between p-2 rounded bg-white hover:bg-zinc-100 border border-zinc-200 text-zinc-800 transition">
                   <span class="font-medium">2. Katalog Bookstore (Pesan WA)</span>
                   <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-zinc-950"></i>
+                </a>
+                <a href="alt2-modern/detail-buku.html" class="flex items-center justify-between p-2 rounded bg-blue-50/60 hover:bg-blue-100 border border-blue-200 text-blue-900 transition">
+                  <span class="font-medium">3. Detail Buku Monograf (Baru)</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-blue-700"></i>
                 </a>
                 <div class="flex items-center justify-between p-2 rounded bg-zinc-100 border border-zinc-200 text-zinc-500">
                   <span class="font-medium flex items-center gap-1.5"><i data-lucide="external-link" class="w-3 h-3 text-zinc-400"></i> Menu Jurnal &rarr; Direct Link ke OJS</span>
@@ -248,6 +256,10 @@
                   <span class="font-medium">2. Katalog Bookstore (Pesan WA)</span>
                   <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-burgundy-700"></i>
                 </a>
+                <a href="alt3-press/detail-buku.html" class="flex items-center justify-between p-2 rounded bg-rose-50/60 hover:bg-rose-100 border border-rose-200 text-rose-900 transition">
+                  <span class="font-medium">3. Detail Monograf Ilmiah (Baru)</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-burgundy-700"></i>
+                </a>
                 <div class="flex items-center justify-between p-2 rounded bg-stone-100 border border-stone-200 text-stone-500">
                   <span class="font-medium flex items-center gap-1.5"><i data-lucide="external-link" class="w-3 h-3 text-stone-400"></i> Menu Jurnal &rarr; Direct Link ke OJS</span>
                   <span class="text-[10px] bg-stone-200 text-stone-600 px-1.5 py-0.5 rounded font-mono">No Action</span>
@@ -277,17 +289,27 @@
           </h3>
           <p class="text-xs text-slate-500 mt-0.5">Tinjau ketiga desain langsung di dalam frame ini tanpa harus membuka tab baru.</p>
         </div>
-        <div class="flex flex-wrap items-center gap-2">
+        <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
           <button class="live-btn active px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-900 text-white" onclick="changePreview('alt1-emerald/index.html', this)">
-            Alt 1: Emerald
+            Alt 1 (Emerald)
           </button>
           <button class="live-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200" onclick="changePreview('alt2-modern/index.html', this)">
-            Alt 2: Modern Grid
+            Alt 2 (Modern)
           </button>
           <button class="live-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200" onclick="changePreview('alt3-press/index.html', this)">
-            Alt 3: University Press
+            Alt 3 (Press)
           </button>
-          <a id="openFullBtn" href="alt1-emerald/index.html" target="_blank" class="px-3 py-1.5 rounded-lg text-xs font-semibold border border-slate-300 hover:bg-slate-50 text-slate-700 flex items-center gap-1">
+          <span class="text-slate-300 hidden sm:inline">|</span>
+          <button class="live-btn px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-emerald-50 text-emerald-800 hover:bg-emerald-100 border border-emerald-200" onclick="changePreview('alt1-emerald/detail-buku.html', this)">
+            Detail Buku 1
+          </button>
+          <button class="live-btn px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-blue-50 text-blue-800 hover:bg-blue-100 border border-blue-200" onclick="changePreview('alt2-modern/detail-buku.html', this)">
+            Detail Buku 2
+          </button>
+          <button class="live-btn px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-rose-50 text-rose-800 hover:bg-rose-100 border border-rose-200" onclick="changePreview('alt3-press/detail-buku.html', this)">
+            Detail Buku 3
+          </button>
+          <a id="openFullBtn" href="alt1-emerald/index.html" target="_blank" class="px-3 py-1.5 rounded-lg text-xs font-semibold border border-slate-300 hover:bg-slate-50 text-slate-700 flex items-center gap-1 ml-auto sm:ml-0">
             Buka Penuh <i data-lucide="external-link" class="w-3 h-3"></i>
           </a>
         </div>
