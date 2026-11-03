@@ -67,7 +67,7 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         
         <!-- ================= ALT 1: EMERALD STYLE ================= -->
         <div class="bg-white rounded-2xl border-2 border-emerald-500/80 p-6 flex flex-col justify-between shadow-lg relative group">
@@ -208,7 +208,7 @@
         </div>
 
         <!-- ================= ALT 3: UNIVERSITY PRESS ================= -->
-        <div class="bg-white rounded-2xl border border-stone-200 hover:border-burgundy-700 p-6 flex flex-col justify-between shadow-md hover:shadow-xl transition relative group">
+        <div class="bg-white rounded-2xl border border-stone-200 hover:border-burgundy-700 p-6 flex flex-col justify-between shadow-md hover:shadow-xl transition relative group md:col-span-2 lg:col-span-1">
           <div class="absolute -top-3.5 left-6 bg-burgundy-800 text-white text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
             Alternatif 3 &bull; University Press
           </div>
@@ -315,8 +315,27 @@
         </div>
       </div>
 
+      <!-- Device Viewport Simulation Controls -->
+      <div class="flex flex-wrap items-center justify-between border-t border-slate-100 pt-3 mb-3 text-xs gap-2">
+        <span class="text-slate-500 font-medium flex items-center gap-1.5">
+          <i data-lucide="smartphone" class="w-4 h-4 text-slate-400"></i>
+          Simulasi Ukuran Layar:
+        </span>
+        <div class="inline-flex rounded-lg border border-slate-200 bg-slate-100 p-0.5">
+          <button id="devDesktop" class="dev-btn active px-3 py-1 rounded-md text-xs font-semibold bg-white text-slate-900 shadow-sm flex items-center gap-1" onclick="setDevice('desktop', this)">
+            <i data-lucide="monitor" class="w-3.5 h-3.5"></i> Desktop (100%)
+          </button>
+          <button id="devTablet" class="dev-btn px-3 py-1 rounded-md text-xs font-medium text-slate-600 hover:text-slate-900 flex items-center gap-1" onclick="setDevice('tablet', this)">
+            <i data-lucide="tablet" class="w-3.5 h-3.5"></i> Tablet (768px)
+          </button>
+          <button id="devMobile" class="dev-btn px-3 py-1 rounded-md text-xs font-medium text-slate-600 hover:text-slate-900 flex items-center gap-1" onclick="setDevice('mobile', this)">
+            <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> Mobile (375px)
+          </button>
+        </div>
+      </div>
+
       <!-- Preview Iframe -->
-      <div class="w-full h-[650px] border border-slate-200 rounded-xl overflow-hidden bg-slate-100 shadow-inner">
+      <div id="frameWrapper" class="w-full h-[650px] border border-slate-200 rounded-xl overflow-hidden bg-slate-100 shadow-inner transition-all duration-300 mx-auto">
         <iframe id="previewIframe" src="alt1-emerald/index.html" class="w-full h-full border-0"></iframe>
       </div>
     </div>
@@ -327,7 +346,7 @@
       <p class="text-xs text-slate-500 mb-6">Ringkasan aspek estetika, arsitektur informasi, dan kesesuaian target pembaca.</p>
 
       <div class="overflow-x-auto">
-        <table class="w-full text-xs text-left border-collapse">
+        <table class="min-w-[720px] w-full text-xs text-left border-collapse">
           <thead>
             <tr class="border-b border-slate-200 bg-slate-50 text-slate-700 uppercase font-semibold tracking-wider">
               <th class="py-3 px-4">Aspek Desain</th>
@@ -397,6 +416,26 @@
       });
       el.classList.add('bg-slate-900', 'text-white', 'active');
       el.classList.remove('bg-slate-100', 'text-slate-700');
+    }
+
+    function setDevice(device, el) {
+      const wrapper = document.getElementById('frameWrapper');
+      wrapper.classList.remove('max-w-[390px]', 'max-w-[768px]', 'w-full');
+
+      if (device === 'mobile') {
+        wrapper.classList.add('max-w-[390px]');
+      } else if (device === 'tablet') {
+        wrapper.classList.add('max-w-[768px]');
+      } else {
+        wrapper.classList.add('w-full');
+      }
+
+      document.querySelectorAll('.dev-btn').forEach(btn => {
+        btn.classList.remove('bg-white', 'text-slate-900', 'font-semibold', 'shadow-sm', 'active');
+        btn.classList.add('text-slate-600', 'font-medium');
+      });
+      el.classList.add('bg-white', 'text-slate-900', 'font-semibold', 'shadow-sm', 'active');
+      el.classList.remove('text-slate-600', 'font-medium');
     }
   </script>
 </body>

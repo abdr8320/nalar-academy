@@ -39,40 +39,41 @@
 <body class="min-h-screen flex flex-col bg-white text-stone-800 antialiased selection:bg-rose-100 selection:text-rose-900">
 
   <!-- ================= PREVIEW SWITCHER BAR ================= -->
-  <div class="bg-stone-900 text-stone-200 text-xs py-2 px-4 border-b border-stone-800 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+  <div class="bg-stone-900 text-stone-200 text-xs py-2 px-4 border-b border-stone-800 relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2.5">
       <div class="flex items-center gap-2">
         <span class="font-medium text-white">Pratinjau Desain:</span>
-        <span class="text-stone-300 font-medium">Alternatif 3 &mdash; University Press Style &bull; Katalog Buku</span>
+        <span class="text-stone-300 font-medium text-[11px]">Alternatif 3 &mdash; University Press Style &bull; Katalog Buku</span>
       </div>
-      <div class="flex items-center space-x-2 text-xs">
+      <div class="flex flex-wrap items-center gap-1.5 sm:gap-2 text-xs">
+        <a href="index.html" class="px-2.5 py-1 rounded text-stone-300 hover:text-white hover:bg-stone-800 transition">Alt 3 Beranda</a>
+        <a href="bookstore.html" class="px-2.5 py-1 rounded bg-white text-stone-900 font-semibold">Alt 3 Bookstore</a>
         <a href="../alt1-emerald/bookstore.html" class="px-2.5 py-1 rounded text-stone-300 hover:text-white hover:bg-stone-800 transition">Alt 1 (Emerald)</a>
         <a href="../alt2-modern/bookstore.html" class="px-2.5 py-1 rounded text-stone-300 hover:text-white hover:bg-stone-800 transition">Alt 2 (Modern Grid)</a>
-        <a href="index.html" class="px-2.5 py-1 rounded bg-white text-stone-900 font-semibold">Alt 3 (University Press)</a>
-        <span class="text-stone-600">|</span>
+        <span class="text-stone-600 hidden sm:inline">|</span>
         <a href="../index.html" class="px-2.5 py-1 rounded bg-stone-800 text-amber-300 hover:bg-stone-700 font-medium">Hub Showcase</a>
       </div>
     </div>
   </div>
 
   <!-- Header -->
-  <header class="border-b border-stone-200 bg-white">
-    <div class="max-w-6xl mx-auto px-4 py-6 text-center">
-      <a href="index.html" class="inline-block">
-        <div class="flex items-center justify-center gap-3">
-          <div class="w-10 h-10 rounded border border-stone-800 flex items-center justify-center font-serif text-lg font-bold text-stone-900">
+  <header class="border-b border-stone-200 bg-white sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 py-4 sm:py-6 text-center">
+      <a href="index.html" class="inline-block group">
+        <div class="flex items-center justify-center gap-2.5 sm:gap-3">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded border border-stone-800 flex items-center justify-center font-serif text-base sm:text-lg font-bold text-stone-900 flex-shrink-0">
             NA
           </div>
-          <span class="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-stone-900">
+          <span class="font-serif text-xl sm:text-2xl md:text-3xl font-bold tracking-wider text-stone-900 group-hover:text-burgundy-700 transition">
             NALAR ACADEMY PRESS
           </span>
         </div>
-        <div class="text-[11px] uppercase tracking-[0.2em] text-stone-500 font-serif mt-1">
+        <div class="text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-stone-500 font-serif mt-1">
           Penerbit Ilmiah & Direktori Jurnal OJS
         </div>
       </a>
 
-      <nav class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-center space-x-8 text-xs font-semibold uppercase tracking-wider text-stone-600">
+      <nav class="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-stone-100 flex flex-wrap items-center justify-center gap-x-4 sm:gap-x-8 gap-y-2 text-xs font-semibold uppercase tracking-wider text-stone-600">
         <a href="index.html" class="hover:text-burgundy-700 transition pb-1">Profil / Beranda</a>
         <!-- Menu Jurnal: di production langsung redirect ke OJS, pada prototipe tidak ada action -->
         <a href="javascript:void(0)" class="hover:text-burgundy-700 transition pb-1 cursor-pointer">Jurnal Ilmiah (OJS)</a>
@@ -84,7 +85,7 @@
   </header>
 
   <!-- Title Banner -->
-  <section class="py-10 bg-stone-50/70 border-b border-stone-200 text-center">
+  <section class="py-8 sm:py-10 bg-stone-50/70 border-b border-stone-200 text-center">
     <div class="max-w-4xl mx-auto px-4">
       <h1 class="font-serif text-2xl sm:text-3xl font-bold text-stone-900">
         Katalog Buku Ajar, Monograf & Karya Ilmiah
@@ -94,12 +95,12 @@
       </p>
 
       <!-- Category Filter -->
-      <div class="mt-6 flex flex-wrap justify-center gap-2 text-xs">
-        <button class="b-press-btn active px-4 py-1.5 rounded bg-stone-900 text-white font-medium" data-cat="all">Semua Koleksi</button>
-        <button class="b-press-btn px-4 py-1.5 rounded border border-stone-300 bg-white text-stone-700" data-cat="metodologi">Metodologi & Riset</button>
-        <button class="b-press-btn px-4 py-1.5 rounded border border-stone-300 bg-white text-stone-700" data-cat="pendidikan">Pendidikan</button>
-        <button class="b-press-btn px-4 py-1.5 rounded border border-stone-300 bg-white text-stone-700" data-cat="soshum">Sosial Humaniora</button>
-        <button class="b-press-btn px-4 py-1.5 rounded border border-stone-300 bg-white text-stone-700" data-cat="sains">Sains Terapan</button>
+      <div class="mt-6 flex flex-wrap justify-center gap-1.5 sm:gap-2 text-xs">
+        <button class="b-press-btn active px-3.5 sm:px-4 py-1.5 rounded bg-stone-900 text-white font-medium" data-cat="all">Semua Koleksi</button>
+        <button class="b-press-btn px-3.5 sm:px-4 py-1.5 rounded border border-stone-300 bg-white text-stone-700" data-cat="metodologi">Metodologi & Riset</button>
+        <button class="b-press-btn px-3.5 sm:px-4 py-1.5 rounded border border-stone-300 bg-white text-stone-700" data-cat="pendidikan">Pendidikan</button>
+        <button class="b-press-btn px-3.5 sm:px-4 py-1.5 rounded border border-stone-300 bg-white text-stone-700" data-cat="soshum">Sosial Humaniora</button>
+        <button class="b-press-btn px-3.5 sm:px-4 py-1.5 rounded border border-stone-300 bg-white text-stone-700" data-cat="sains">Sains Terapan</button>
       </div>
     </div>
   </section>
@@ -107,7 +108,7 @@
   <!-- Books Listing -->
   <main class="py-12 bg-white flex-grow">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6" id="pressBookGrid">
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6" id="pressBookGrid">
         
         <!-- Book 1 (Oxford Burgundy Academic) -->
         <div class="press-book-card group bg-white border border-stone-200 rounded p-4 flex flex-col justify-between hover:border-stone-400 transition"

@@ -41,17 +41,17 @@
 <body class="min-h-screen flex flex-col bg-white text-stone-800 antialiased selection:bg-rose-100 selection:text-rose-900">
 
   <!-- ================= PREVIEW SWITCHER BAR ================= -->
-  <div class="bg-stone-900 text-stone-200 text-xs py-2 px-4 border-b border-stone-800 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+  <div class="bg-stone-900 text-stone-200 text-xs py-2 px-4 border-b border-stone-800 relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2.5">
       <div class="flex items-center gap-2">
         <span class="font-medium text-white">Pratinjau Desain:</span>
-        <span class="text-stone-300 font-medium">Alternatif 3 &mdash; University Press Style</span>
+        <span class="text-stone-300 font-medium text-[11px]">Alternatif 3 &mdash; University Press Style</span>
       </div>
-      <div class="flex items-center space-x-2 text-xs">
+      <div class="flex flex-wrap items-center gap-1.5 sm:gap-2 text-xs">
         <a href="../alt1-emerald/index.html" class="px-2.5 py-1 rounded text-stone-300 hover:text-white hover:bg-stone-800 transition">Alt 1 (Emerald)</a>
         <a href="../alt2-modern/index.html" class="px-2.5 py-1 rounded text-stone-300 hover:text-white hover:bg-stone-800 transition">Alt 2 (Modern Grid)</a>
         <a href="index.html" class="px-2.5 py-1 rounded bg-white text-stone-900 font-semibold">Alt 3 (University Press)</a>
-        <span class="text-stone-600">|</span>
+        <span class="text-stone-600 hidden sm:inline">|</span>
         <a href="../index.html" class="px-2.5 py-1 rounded bg-stone-800 text-amber-300 hover:bg-stone-700 font-medium">Hub Showcase</a>
       </div>
     </div>
@@ -59,35 +59,35 @@
 
   <!-- Traditional Top Strip -->
   <div class="border-b border-stone-200 bg-stone-50 py-1.5 text-[11px] text-stone-600">
-    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-1 text-center sm:text-left">
       <div>Lembaga Penerbitan Akademik & Pengelola Jurnal Ilmiah Terakreditasi</div>
-      <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-3 text-stone-500">
         <span>Anggota IKAPI No. 492/JBA</span>
-        <span>&bull;</span>
-        <a href="https://wa.me/6281234567890" class="hover:text-stone-900">Kontak Redaksi: +62 812-3456-7890</a>
+        <span class="hidden sm:inline">&bull;</span>
+        <a href="https://wa.me/6281234567890" class="hover:text-stone-900 hidden sm:inline">WA: +62 812-3456-7890</a>
       </div>
     </div>
   </div>
 
   <!-- Classic Scholarly Header (Center-Aligned Prestigious) -->
-  <header class="border-b border-stone-200 bg-white">
-    <div class="max-w-6xl mx-auto px-4 py-6 text-center">
+  <header class="border-b border-stone-200 bg-white sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 py-4 sm:py-6 text-center">
       <a href="index.html" class="inline-block group">
-        <div class="flex items-center justify-center gap-3">
-          <div class="w-10 h-10 rounded border border-stone-800 flex items-center justify-center font-serif text-lg font-bold text-stone-900">
+        <div class="flex items-center justify-center gap-2.5 sm:gap-3">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded border border-stone-800 flex items-center justify-center font-serif text-base sm:text-lg font-bold text-stone-900 flex-shrink-0">
             NA
           </div>
-          <span class="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-stone-900 group-hover:text-burgundy-700 transition">
+          <span class="font-serif text-xl sm:text-2xl md:text-3xl font-bold tracking-wider text-stone-900 group-hover:text-burgundy-700 transition">
             NALAR ACADEMY PRESS
           </span>
         </div>
-        <div class="text-[11px] uppercase tracking-[0.2em] text-stone-500 font-serif mt-1">
+        <div class="text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-stone-500 font-serif mt-1">
           Penerbit Ilmiah & Direktori Jurnal OJS
         </div>
       </a>
 
       <!-- 3 Core Navigation Items (As in eduped.org) -->
-      <nav class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-center space-x-8 text-xs font-semibold uppercase tracking-wider text-stone-600">
+      <nav class="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-stone-100 flex flex-wrap items-center justify-center gap-x-4 sm:gap-x-8 gap-y-2 text-xs font-semibold uppercase tracking-wider text-stone-600">
         <a href="index.html" class="text-burgundy-700 font-bold border-b-2 border-burgundy-700 pb-1">
           Profil / Beranda
         </a>
@@ -234,30 +234,30 @@
       </div>
 
       <!-- Book Shelf (University Press Realistic Paperback Covers) -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
         
         <!-- Book 1 (Oxford Burgundy Academic) -->
-        <div class="group bg-white border border-stone-200 p-4 rounded flex flex-col justify-between hover:border-stone-400 transition">
+        <div class="group bg-white border border-stone-200 p-3 sm:p-4 rounded flex flex-col justify-between hover:border-stone-400 transition">
           <div>
-            <a href="detail-buku.html?id=1" class="block aspect-[1/1.45] bg-[#4c0519] rounded-xs p-4 text-white relative book-spine overflow-hidden group-hover:opacity-95 transition">
-              <div class="h-full flex flex-col justify-between border border-amber-200/40 p-3 text-center">
-                <span class="text-[9px] font-serif uppercase tracking-widest text-amber-200">Nalar Press</span>
+            <a href="detail-buku.html?id=1" class="block aspect-[1/1.45] bg-[#4c0519] rounded-xs p-3 sm:p-4 text-white relative book-spine overflow-hidden group-hover:opacity-95 transition">
+              <div class="h-full flex flex-col justify-between border border-amber-200/40 p-2 sm:p-3 text-center">
+                <span class="text-[8px] sm:text-[9px] font-serif uppercase tracking-widest text-amber-200">Nalar Press</span>
                 <div>
-                  <h4 class="font-serif text-xs font-bold leading-snug">Metodologi Riset Kualitatif</h4>
-                  <p class="text-[9px] text-rose-200 mt-1">Sosial & Humaniora</p>
+                  <h4 class="font-serif text-xs font-bold leading-snug line-clamp-2">Metodologi Riset Kualitatif</h4>
+                  <p class="text-[8px] sm:text-[9px] text-rose-200 mt-0.5 sm:mt-1 line-clamp-1">Sosial & Humaniora</p>
                 </div>
-                <div class="border-t border-white/20 pt-1.5 text-[8px] text-rose-100 font-serif">
+                <div class="border-t border-white/20 pt-1 text-[8px] text-rose-100 font-serif truncate">
                   Dr. H. Abdurrahman, M.Pd.
                 </div>
               </div>
             </a>
             <div class="mt-3">
-              <span class="text-[10px] text-stone-400 font-mono">ISBN: 978-623-8123-01-2</span>
+              <span class="text-[9px] sm:text-[10px] text-stone-400 font-mono">ISBN: 978-623-8123-01-2</span>
               <h3 class="font-serif text-xs font-bold text-stone-900 line-clamp-2 mt-0.5">
                 <a href="detail-buku.html?id=1" class="hover:text-burgundy-700">Metodologi Penelitian Kualitatif dalam Sosial & Humaniora</a>
               </h3>
-              <p class="text-[11px] text-stone-500 mt-0.5">Dr. H. Abdurrahman, M.Pd.</p>
-              <div class="text-sm font-bold text-stone-900 mt-2">Rp 95.000</div>
+              <p class="text-[11px] text-stone-500 mt-0.5 truncate">Dr. H. Abdurrahman, M.Pd.</p>
+              <div class="text-xs sm:text-sm font-bold text-stone-900 mt-1.5 sm:mt-2">Rp 95.000</div>
             </div>
           </div>
           <div class="mt-3 pt-2 border-t border-stone-100">
@@ -268,27 +268,27 @@
         </div>
 
         <!-- Book 2 (Cambridge Navy Scholarly) -->
-        <div class="group bg-white border border-stone-200 p-4 rounded flex flex-col justify-between hover:border-stone-400 transition">
+        <div class="group bg-white border border-stone-200 p-3 sm:p-4 rounded flex flex-col justify-between hover:border-stone-400 transition">
           <div>
-            <a href="detail-buku.html?id=2" class="block aspect-[1/1.45] bg-[#1e293b] rounded-xs p-4 text-white relative book-spine overflow-hidden group-hover:opacity-95 transition">
-              <div class="h-full flex flex-col justify-between border border-slate-300/30 p-3 text-center">
-                <span class="text-[9px] font-serif uppercase tracking-widest text-slate-300">Nalar Press</span>
+            <a href="detail-buku.html?id=2" class="block aspect-[1/1.45] bg-[#1e293b] rounded-xs p-3 sm:p-4 text-white relative book-spine overflow-hidden group-hover:opacity-95 transition">
+              <div class="h-full flex flex-col justify-between border border-slate-300/30 p-2 sm:p-3 text-center">
+                <span class="text-[8px] sm:text-[9px] font-serif uppercase tracking-widest text-slate-300">Nalar Press</span>
                 <div>
-                  <h4 class="font-serif text-xs font-bold leading-snug">Filsafat Ilmu & Etika</h4>
-                  <p class="text-[9px] text-slate-300 mt-1">Integritas Akademik</p>
+                  <h4 class="font-serif text-xs font-bold leading-snug line-clamp-2">Filsafat Ilmu & Etika</h4>
+                  <p class="text-[8px] sm:text-[9px] text-slate-300 mt-0.5 sm:mt-1 line-clamp-1">Integritas Akademik</p>
                 </div>
-                <div class="border-t border-white/20 pt-1.5 text-[8px] text-slate-200 font-serif">
+                <div class="border-t border-white/20 pt-1 text-[8px] text-slate-200 font-serif truncate">
                   Prof. Dr. M. Syukri
                 </div>
               </div>
             </a>
             <div class="mt-3">
-              <span class="text-[10px] text-stone-400 font-mono">ISBN: 978-623-8123-02-9</span>
+              <span class="text-[9px] sm:text-[10px] text-stone-400 font-mono">ISBN: 978-623-8123-02-9</span>
               <h3 class="font-serif text-xs font-bold text-stone-900 line-clamp-2 mt-0.5">
                 <a href="detail-buku.html?id=2" class="hover:text-burgundy-700">Filsafat Ilmu dan Etika Akademik: Integritas Karya Ilmiah</a>
               </h3>
-              <p class="text-[11px] text-stone-500 mt-0.5">Prof. Dr. M. Syukri, M.Phil.</p>
-              <div class="text-sm font-bold text-stone-900 mt-2">Rp 85.000</div>
+              <p class="text-[11px] text-stone-500 mt-0.5 truncate">Prof. Dr. M. Syukri, M.Phil.</p>
+              <div class="text-xs sm:text-sm font-bold text-stone-900 mt-1.5 sm:mt-2">Rp 85.000</div>
             </div>
           </div>
           <div class="mt-3 pt-2 border-t border-stone-100">
@@ -299,27 +299,27 @@
         </div>
 
         <!-- Book 3 (Deep Forest Scholarly) -->
-        <div class="group bg-white border border-stone-200 p-4 rounded flex flex-col justify-between hover:border-stone-400 transition">
+        <div class="group bg-white border border-stone-200 p-3 sm:p-4 rounded flex flex-col justify-between hover:border-stone-400 transition">
           <div>
-            <a href="detail-buku.html?id=3" class="block aspect-[1/1.45] bg-[#143d2c] rounded-xs p-4 text-white relative book-spine overflow-hidden group-hover:opacity-95 transition">
-              <div class="h-full flex flex-col justify-between border border-emerald-200/30 p-3 text-center">
-                <span class="text-[9px] font-serif uppercase tracking-widest text-emerald-200">Nalar Press</span>
+            <a href="detail-buku.html?id=3" class="block aspect-[1/1.45] bg-[#143d2c] rounded-xs p-3 sm:p-4 text-white relative book-spine overflow-hidden group-hover:opacity-95 transition">
+              <div class="h-full flex flex-col justify-between border border-emerald-200/30 p-2 sm:p-3 text-center">
+                <span class="text-[8px] sm:text-[9px] font-serif uppercase tracking-widest text-emerald-200">Nalar Press</span>
                 <div>
-                  <h4 class="font-serif text-xs font-bold leading-snug">Desain Instruksional OBE</h4>
-                  <p class="text-[9px] text-emerald-200 mt-1">Outcome-Based Education</p>
+                  <h4 class="font-serif text-xs font-bold leading-snug line-clamp-2">Desain Instruksional OBE</h4>
+                  <p class="text-[8px] sm:text-[9px] text-emerald-200 mt-0.5 sm:mt-1 line-clamp-1">Outcome-Based Education</p>
                 </div>
-                <div class="border-t border-white/20 pt-1.5 text-[8px] text-emerald-100 font-serif">
+                <div class="border-t border-white/20 pt-1 text-[8px] text-emerald-100 font-serif truncate">
                   Dr. Rina Fitriani, M.Ed.
                 </div>
               </div>
             </a>
             <div class="mt-3">
-              <span class="text-[10px] text-stone-400 font-mono">ISBN: 978-623-8123-03-6</span>
+              <span class="text-[9px] sm:text-[10px] text-stone-400 font-mono">ISBN: 978-623-8123-03-6</span>
               <h3 class="font-serif text-xs font-bold text-stone-900 line-clamp-2 mt-0.5">
                 <a href="detail-buku.html?id=3" class="hover:text-burgundy-700">Desain Instruksional Modern Berbasis OBE di Perguruan Tinggi</a>
               </h3>
-              <p class="text-[11px] text-stone-500 mt-0.5">Dr. Rina Fitriani, M.Ed.</p>
-              <div class="text-sm font-bold text-stone-900 mt-2">Rp 110.000</div>
+              <p class="text-[11px] text-stone-500 mt-0.5 truncate">Dr. Rina Fitriani, M.Ed.</p>
+              <div class="text-xs sm:text-sm font-bold text-stone-900 mt-1.5 sm:mt-2">Rp 110.000</div>
             </div>
           </div>
           <div class="mt-3 pt-2 border-t border-stone-100">
@@ -330,27 +330,27 @@
         </div>
 
         <!-- Book 4 (Dark Academic Umber) -->
-        <div class="group bg-white border border-stone-200 p-4 rounded flex flex-col justify-between hover:border-stone-400 transition">
+        <div class="group bg-white border border-stone-200 p-3 sm:p-4 rounded flex flex-col justify-between hover:border-stone-400 transition">
           <div>
-            <a href="detail-buku.html?id=4" class="block aspect-[1/1.45] bg-[#3b2c20] rounded-xs p-4 text-white relative book-spine overflow-hidden group-hover:opacity-95 transition">
-              <div class="h-full flex flex-col justify-between border border-amber-200/30 p-3 text-center">
-                <span class="text-[9px] font-serif uppercase tracking-widest text-amber-200">Nalar Press</span>
+            <a href="detail-buku.html?id=4" class="block aspect-[1/1.45] bg-[#3b2c20] rounded-xs p-3 sm:p-4 text-white relative book-spine overflow-hidden group-hover:opacity-95 transition">
+              <div class="h-full flex flex-col justify-between border border-amber-200/30 p-2 sm:p-3 text-center">
+                <span class="text-[8px] sm:text-[9px] font-serif uppercase tracking-widest text-amber-200">Nalar Press</span>
                 <div>
-                  <h4 class="font-serif text-xs font-bold leading-snug">AI & Transformasi Digital</h4>
-                  <p class="text-[9px] text-amber-200 mt-1">Pembelajaran Kampus</p>
+                  <h4 class="font-serif text-xs font-bold leading-snug line-clamp-2">AI & Transformasi Digital</h4>
+                  <p class="text-[8px] sm:text-[9px] text-amber-200 mt-0.5 sm:mt-1 line-clamp-1">Pembelajaran Kampus</p>
                 </div>
-                <div class="border-t border-white/20 pt-1.5 text-[8px] text-amber-100 font-serif">
+                <div class="border-t border-white/20 pt-1 text-[8px] text-amber-100 font-serif truncate">
                   Hendra Wijaya & Tim
                 </div>
               </div>
             </a>
             <div class="mt-3">
-              <span class="text-[10px] text-stone-400 font-mono">ISBN: 978-623-8123-04-3</span>
+              <span class="text-[9px] sm:text-[10px] text-stone-400 font-mono">ISBN: 978-623-8123-04-3</span>
               <h3 class="font-serif text-xs font-bold text-stone-900 line-clamp-2 mt-0.5">
                 <a href="detail-buku.html?id=4" class="hover:text-burgundy-700">Kecerdasan Buatan & Transformasi Digital dalam Pendidikan</a>
               </h3>
-              <p class="text-[11px] text-stone-500 mt-0.5">Hendra W. & Dr. Gunawan</p>
-              <div class="text-sm font-bold text-stone-900 mt-2">Rp 125.000</div>
+              <p class="text-[11px] text-stone-500 mt-0.5 truncate">Hendra W. & Dr. Gunawan</p>
+              <div class="text-xs sm:text-sm font-bold text-stone-900 mt-1.5 sm:mt-2">Rp 125.000</div>
             </div>
           </div>
           <div class="mt-3 pt-2 border-t border-stone-100">
